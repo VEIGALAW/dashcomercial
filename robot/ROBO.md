@@ -32,7 +32,7 @@ Pode rodar em qualquer PC que tenha o repo clonado, o Claude desktop com o conec
 6. **Monitor de Leads:** `python robot/monitor_import.py --apply` (respostas positivas novas do Rainmaker e do SINAPSE entram como `engajado`, sem dono).
 7. **Aplicar os movimentos** (de 3, 4 e 5) na base, casando por empresa, nome ou e-mail (sem acento e sem caixa). Uma mensagem pode citar vários leads.
    - Lead existente: acrescentar em `historico` `{data, autor, texto, fonte}` (fonte = "Prometheus", "Outlook" ou "Agenda"), atualizar `ultimo_toque` = data do movimento. Se o estágio mudar, atualizar `estagio` e `estagio_desde` (data do movimento).
-   - Lead novo: criar com `id` = slug(empresa-nome), `projeto` (Rainmaker por padrão; SINAPSE se for escritório de contabilidade/advocacia/gestora buscando parceria, ou se a mensagem disser SINAPSE), `subfrente` (contábil/jurídico/patrimonial) quando SINAPSE, contatos que aparecerem, `responsavel` = quem postou (ou o dono citado), `historico` com o movimento.
+   - Lead novo: criar com `id` = slug(empresa-nome), `criado_em` = data de hoje (AAAA-MM-DD), `projeto` (Rainmaker por padrão; SINAPSE se for escritório de contabilidade/advocacia/gestora buscando parceria, ou se a mensagem disser SINAPSE), `subfrente` (contábil/jurídico/patrimonial) quando SINAPSE, contatos que aparecerem, `responsavel` = quem postou (ou o dono citado), `historico` com o movimento.
    - **Formato curto** (o dash gera esse formato no botão "Copiar mensagem"): `EMPRESA | contato | o que aconteceu | próximo passo | dd/mm [hh:mm] [#estagio]`.
      - `#engajado #material #agendando #reuniao_marcada #reuniao_feita #proposta #negociacao #ganho #nutrir #perdido` definem o estágio.
      - `#perdido EMPRESA | motivo` → `estagio=perdido`, `motivo_perda`.

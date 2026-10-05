@@ -56,7 +56,7 @@ def main(apply: bool):
             "situacao_inicial": f"Entrou pelo Monitor de Leads ({temp})",
             "proximo_passo": "Responder em até 1 dia útil e definir dono.",
             "proxima_data": None, "proxima_hora": "",
-            "ultimo_toque": d, "estagio_desde": d,
+            "ultimo_toque": d, "estagio_desde": d, "criado_em": date.today().isoformat(),
             "historico": [{"data": d, "autor": "Lead", "texto": f"Respondeu via {canal}: {resp}", "fonte": "Monitor de Leads"}],
         }
         novos.append(lead)
