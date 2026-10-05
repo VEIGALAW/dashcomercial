@@ -7,11 +7,12 @@ Pipeline comercial do time (Rainmaker + SINAPSE): agenda semanal de follow-ups, 
 ## Como funciona
 
 - Os dados ficam em `data/leads.enc.json`, criptografados com AES-256-GCM. O repo é público, mas sem a senha ninguém lê nome, contato ou histórico dos leads.
-- O robô (tarefas agendadas no Claude desktop) roda às **7h45 (dias úteis)** e às **19h (todo dia)**:
-  - lê o grupo **Prometheus** no Teams, o Outlook e a agenda do Rafael, e o **Monitor de Leads** (respostas do Rainmaker e do SINAPSE);
+- O robô roda **na nuvem** (rotina "Robô Dash Comercial (nuvem)" em claude.ai/code/routines, conector Microsoft 365), às **7h45 e 19h45 todo dia**, sem depender de nenhum PC ligado:
+  - lê o grupo **Prometheus** no Teams, o Outlook e a agenda do Rafael;
   - atualiza estágios, donos, próximos contatos e histórico; preenche datas pela cadência padrão quando ninguém marcou;
-  - às 7h45 posta no Prometheus a agenda do dia de cada pessoa.
-  Detalhes em [`robot/ROBO.md`](robot/ROBO.md).
+  - às 7h45 dos dias úteis posta no Prometheus a agenda do dia de cada pessoa.
+- No PC do Rafael fica só uma tarefa (19h) que traz as respostas novas do **Monitor de Leads** (Rainmaker + SINAPSE), porque esse arquivo só existe no Desktop dele.
+- Detalhes em [`robot/ROBO.md`](robot/ROBO.md).
 - Se o robô ficar mais de 14h sem publicar, o dash mostra um aviso no topo.
 
 ## Rodar o robô em outro PC (backup)
