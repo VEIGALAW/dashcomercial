@@ -1,0 +1,2596 @@
+{
+ "publicado_em": "2026-10-05T23:35:13+00:00",
+ "atualizado_em": "2026-10-05T23:31:49Z",
+ "prometheus": {
+  "chat_id": "",
+  "ultima_msg": "2026-10-05T20:43:25.000Z"
+ },
+ "equipe": [
+  "Rafael",
+  "Lucas",
+  "Aline",
+  "Ricardo"
+ ],
+ "feed": [
+  {
+   "data": "2026-10-05",
+   "autor": "Robô",
+   "texto": "Exemplo de movimento: 3 leads novos do Monitor de Leads."
+  },
+  {
+   "data": "2026-10-05",
+   "autor": "Aline",
+   "texto": "Exemplo: propostas enviadas para Alfa Agro 07 e Sigma Saúde 12."
+  },
+  {
+   "data": "2026-10-04",
+   "autor": "Lucas",
+   "texto": "Exemplo: reunião marcada com Delta Contabilidade 03."
+  }
+ ],
+ "leads": [
+  {
+   "id": "demo-01",
+   "nome": "Karina Lopes",
+   "empresa": "Gama Advogados 01",
+   "cargo": "Sócio",
+   "projeto": "SINAPSE",
+   "subfrente": "contábil",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "karina@gama01.com.br"
+   ],
+   "telefone": "(11) 91791-2186",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-28",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-29",
+   "historico": [
+    {
+     "data": "2026-09-28",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-29",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-29",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-09-29"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000
+  },
+  {
+   "id": "demo-02",
+   "nome": "Leonardo Reis",
+   "empresa": "Aurora Contabilidade 02",
+   "cargo": "Gerente de Tax",
+   "projeto": "SINAPSE",
+   "subfrente": "jurídico",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "leonardo@aurora02.com.br"
+   ],
+   "telefone": "(11) 94517-1614",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-28",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-29",
+   "historico": [
+    {
+     "data": "2026-09-28",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-29",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-29",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-09-29"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 3000000
+  },
+  {
+   "id": "demo-03",
+   "nome": "Nelson Pires",
+   "empresa": "Beta Mineração 03",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "nelson@beta03.com.br"
+   ],
+   "telefone": "(11) 97955-1968",
+   "linkedin": "",
+   "canal": "Telefone",
+   "respondeu_em": "2026-09-28",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-09-28",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-28",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000
+  },
+  {
+   "id": "demo-04",
+   "nome": "Henrique Sales",
+   "empresa": "Aurora Construtora 04",
+   "cargo": "Gerente de Tax",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "henrique@aurora04.com.br"
+   ],
+   "telefone": "(11) 97499-1812",
+   "linkedin": "",
+   "canal": "WhatsApp",
+   "respondeu_em": "2026-08-04",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-04",
+   "historico": [
+    {
+     "data": "2026-08-04",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-04",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-08-04",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-08-04"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 40000
+  },
+  {
+   "id": "demo-05",
+   "nome": "Sérgio Nunes",
+   "empresa": "Gama Saúde 05",
+   "cargo": "Diretor Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "engajado",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "sérgio@gama05.com.br"
+   ],
+   "telefone": "(11) 93363-9858",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-08-07",
+   "o_que_respondeu": "Respondeu com interesse e pediu mais detalhes da tese.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Responder e propor 15 minutos.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-10",
+   "historico": [
+    {
+     "data": "2026-08-07",
+     "autor": "Lead",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-10",
+     "autor": "Equipe",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-08-10",
+   "trilha": [
+    {
+     "estagio": "engajado",
+     "data": "2026-08-10"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-06",
+   "nome": "João Batista",
+   "empresa": "Horizonte Metalúrgica 06",
+   "cargo": "Controller",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "joão@horizonte06.com.br"
+   ],
+   "telefone": "(11) 92688-4078",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-08-09",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-08-09",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-10",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000
+  },
+  {
+   "id": "demo-07",
+   "nome": "Sérgio Nunes",
+   "empresa": "Beta Têxtil 07",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "engajado",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "sérgio@beta07.com.br"
+   ],
+   "telefone": "(11) 94374-9133",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-06-22",
+   "o_que_respondeu": "Respondeu com interesse e pediu mais detalhes da tese.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Responder e propor 15 minutos.",
+   "proxima_data": "2026-10-08",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-06-22",
+   "historico": [
+    {
+     "data": "2026-06-22",
+     "autor": "Lead",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-06-22",
+     "autor": "Equipe",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-06-22",
+   "trilha": [
+    {
+     "estagio": "engajado",
+     "data": "2026-06-22"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000,
+   "credito_estimado": 3000000
+  },
+  {
+   "id": "demo-08",
+   "nome": "Karina Lopes",
+   "empresa": "Vértice Têxtil 08",
+   "cargo": "Diretor Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "engajado",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "karina@vértice08.com.br"
+   ],
+   "telefone": "(11) 96924-5911",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-02",
+   "o_que_respondeu": "Respondeu com interesse e pediu mais detalhes da tese.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Responder e propor 15 minutos.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-03",
+   "historico": [
+    {
+     "data": "2026-09-02",
+     "autor": "Lead",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-03",
+     "autor": "Equipe",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-09-03",
+   "trilha": [
+    {
+     "estagio": "engajado",
+     "data": "2026-09-03"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 40000,
+   "credito_estimado": 800000
+  },
+  {
+   "id": "demo-09",
+   "nome": "Henrique Sales",
+   "empresa": "Beta Têxtil 09",
+   "cargo": "Head Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "engajado",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "henrique@beta09.com.br"
+   ],
+   "telefone": "(11) 99604-9111",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-07-16",
+   "o_que_respondeu": "Respondeu com interesse e pediu mais detalhes da tese.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Responder e propor 15 minutos.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-06",
+   "historico": [
+    {
+     "data": "2026-07-16",
+     "autor": "Lead",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-06",
+     "autor": "Equipe",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-08-06",
+   "trilha": [
+    {
+     "estagio": "engajado",
+     "data": "2026-08-06"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000,
+   "credito_estimado": 3000000
+  },
+  {
+   "id": "demo-10",
+   "nome": "João Batista",
+   "empresa": "Aurora Contabilidade 10",
+   "cargo": "CFO",
+   "projeto": "SINAPSE",
+   "subfrente": "patrimonial",
+   "estagio": "material",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "joão@aurora10.com.br"
+   ],
+   "telefone": "(11) 99387-7850",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-18",
+   "o_que_respondeu": "Material da tese enviado por e-mail.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Segundo toque com caso parecido.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-22",
+   "historico": [
+    {
+     "data": "2026-09-18",
+     "autor": "Lead",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-22",
+     "autor": "Equipe",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-22",
+   "trilha": [
+    {
+     "estagio": "material",
+     "data": "2026-09-22"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 40000,
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-11",
+   "nome": "Elisa Faria",
+   "empresa": "Vértice Química 11",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_feita",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "elisa@vértice11.com.br"
+   ],
+   "telefone": "(11) 92271-6140",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-08-22",
+   "o_que_respondeu": "Reunião realizada; dor e decisor mapeados.",
+   "situacao_inicial": "1. Bola nossa: o lead pediu e não há registro de entrega",
+   "proximo_passo": "Enviar recap e proposta.",
+   "proxima_data": "2026-10-08",
+   "proxima_hora": null,
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-08-22",
+     "autor": "Lead",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Equipe",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Agenda",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Agenda"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-10-05"
+    },
+    {
+     "estagio": "reuniao_feita",
+     "data": "2026-10-05"
+    }
+   ],
+   "proxima_auto": true,
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000,
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-12",
+   "nome": "Vitor Campos",
+   "empresa": "Vértice Gestão Patrimonial 12",
+   "cargo": "Sócia-administradora",
+   "projeto": "SINAPSE",
+   "subfrente": "contábil",
+   "estagio": "material",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "vitor@vértice12.com.br"
+   ],
+   "telefone": "(11) 98474-2126",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-10-01",
+   "o_que_respondeu": "Material da tese enviado por e-mail.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Segundo toque com caso parecido.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-01",
+   "historico": [
+    {
+     "data": "2026-10-01",
+     "autor": "Lead",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-01",
+     "autor": "Equipe",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-10-01",
+   "trilha": [
+    {
+     "estagio": "material",
+     "data": "2026-10-01"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-13",
+   "nome": "Paulo Viana",
+   "empresa": "Beta Contabilidade 13",
+   "cargo": "Sócio",
+   "projeto": "SINAPSE",
+   "subfrente": "jurídico",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "paulo@beta13.com.br"
+   ],
+   "telefone": "(11) 96072-8301",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-30",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-30",
+   "historico": [
+    {
+     "data": "2026-09-30",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-30",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-30",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-09-30"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000,
+   "credito_estimado": 3000000
+  },
+  {
+   "id": "demo-14",
+   "nome": "Leonardo Reis",
+   "empresa": "Alfa Energia 14",
+   "cargo": "Head Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "leonardo@alfa14.com.br"
+   ],
+   "telefone": "(11) 93753-2918",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-29",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-09-29",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-29",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000
+  },
+  {
+   "id": "demo-15",
+   "nome": "Gabriela Moura",
+   "empresa": "Sigma Logística 15",
+   "cargo": "Sócio",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "material",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "gabriela@sigma15.com.br"
+   ],
+   "telefone": "(11) 95056-7519",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-08-28",
+   "o_que_respondeu": "Material da tese enviado por e-mail.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Segundo toque com caso parecido.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-30",
+   "historico": [
+    {
+     "data": "2026-08-28",
+     "autor": "Lead",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-30",
+     "autor": "Equipe",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-30",
+   "trilha": [
+    {
+     "estagio": "material",
+     "data": "2026-09-30"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 3000000
+  },
+  {
+   "id": "demo-16",
+   "nome": "Carla Mendes",
+   "empresa": "Gama Energia 16",
+   "cargo": "Diretor Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "material",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "carla@gama16.com.br"
+   ],
+   "telefone": "(11) 95552-3243",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-24",
+   "o_que_respondeu": "Material da tese enviado por e-mail.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Segundo toque com caso parecido.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-24",
+   "historico": [
+    {
+     "data": "2026-09-24",
+     "autor": "Lead",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-24",
+     "autor": "Equipe",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-24",
+   "trilha": [
+    {
+     "estagio": "material",
+     "data": "2026-09-24"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-17",
+   "nome": "Isabela Cunha",
+   "empresa": "Atlas Agro 17",
+   "cargo": "Sócio",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "proposta",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "isabela@atlas17.com.br"
+   ],
+   "telefone": "(11) 97233-4780",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-17",
+   "o_que_respondeu": "Proposta de diagnóstico enviada.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Cobrar retorno da proposta.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-18",
+   "historico": [
+    {
+     "data": "2026-09-17",
+     "autor": "Lead",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-18",
+     "autor": "Equipe",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-18",
+   "trilha": [
+    {
+     "estagio": "proposta",
+     "data": "2026-09-18"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 40000
+  },
+  {
+   "id": "demo-18",
+   "nome": "Fábio Lins",
+   "empresa": "Gama Mineração 18",
+   "cargo": "Sócio",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "material",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "fábio@gama18.com.br"
+   ],
+   "telefone": "(11) 94822-1197",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-08-04",
+   "o_que_respondeu": "Material da tese enviado por e-mail.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Segundo toque com caso parecido.",
+   "proxima_data": "2026-10-08",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-05",
+   "historico": [
+    {
+     "data": "2026-08-04",
+     "autor": "Lead",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-05",
+     "autor": "Equipe",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-08-05",
+   "trilha": [
+    {
+     "estagio": "material",
+     "data": "2026-08-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-19",
+   "nome": "Fábio Lins",
+   "empresa": "Sigma Saúde 19",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "ganho",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "fábio@sigma19.com.br"
+   ],
+   "telefone": "(11) 93386-7864",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-05-15",
+   "o_que_respondeu": "Discutindo percentual de êxito e minuta.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Fechar percentual e enviar minuta.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-30",
+   "historico": [
+    {
+     "data": "2026-05-15",
+     "autor": "Lead",
+     "texto": "Discutindo percentual de êxito e minuta.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-30",
+     "autor": "Equipe",
+     "texto": "Discutindo percentual de êxito e minuta.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-30",
+   "trilha": [
+    {
+     "estagio": "negociacao",
+     "data": "2026-09-30"
+    },
+    {
+     "estagio": "ganho",
+     "data": "2026-10-02"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000,
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-20",
+   "nome": "Vitor Campos",
+   "empresa": "Aurora Agro 20",
+   "cargo": "Controller",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "material",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "vitor@aurora20.com.br"
+   ],
+   "telefone": "(11) 99445-1884",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-07-07",
+   "o_que_respondeu": "Material da tese enviado por e-mail.",
+   "situacao_inicial": "2. Já enviamos e o lead calou: cobrar",
+   "proximo_passo": "Segundo toque com caso parecido.",
+   "proxima_data": "2026-10-09",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-07-29",
+   "historico": [
+    {
+     "data": "2026-07-07",
+     "autor": "Lead",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-07-29",
+     "autor": "Equipe",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Material da tese enviado por e-mail.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-07-29",
+   "trilha": [
+    {
+     "estagio": "material",
+     "data": "2026-07-29"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-21",
+   "nome": "Marina Duarte",
+   "empresa": "Atlas Química 21",
+   "cargo": "Diretor Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_feita",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "marina@atlas21.com.br"
+   ],
+   "telefone": "(11) 92696-8889",
+   "linkedin": "",
+   "canal": "WhatsApp",
+   "respondeu_em": "2026-08-26",
+   "o_que_respondeu": "Reunião realizada; dor e decisor mapeados.",
+   "situacao_inicial": "3. Reunião feita: falta o passo seguinte",
+   "proximo_passo": "Enviar recap e proposta.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-24",
+   "historico": [
+    {
+     "data": "2026-08-26",
+     "autor": "Lead",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-24",
+     "autor": "Equipe",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-24",
+   "trilha": [
+    {
+     "estagio": "reuniao_feita",
+     "data": "2026-09-24"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000
+  },
+  {
+   "id": "demo-22",
+   "nome": "Gabriela Moura",
+   "empresa": "Beta Mineração 22",
+   "cargo": "Diretor Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_feita",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "gabriela@beta22.com.br"
+   ],
+   "telefone": "(11) 93659-2801",
+   "linkedin": "",
+   "canal": "Telefone",
+   "respondeu_em": "2026-09-01",
+   "o_que_respondeu": "Reunião realizada; dor e decisor mapeados.",
+   "situacao_inicial": "3. Reunião feita: falta o passo seguinte",
+   "proximo_passo": "Enviar recap e proposta.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-11",
+   "historico": [
+    {
+     "data": "2026-09-01",
+     "autor": "Lead",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-11",
+     "autor": "Equipe",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-11",
+   "trilha": [
+    {
+     "estagio": "reuniao_feita",
+     "data": "2026-09-11"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-23",
+   "nome": "Bruno Teles",
+   "empresa": "Beta Construtora 23",
+   "cargo": "Gerente de Tax",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_feita",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "bruno@beta23.com.br"
+   ],
+   "telefone": "(11) 93478-9791",
+   "linkedin": "",
+   "canal": "Telefone",
+   "respondeu_em": "2026-06-03",
+   "o_que_respondeu": "Reunião realizada; dor e decisor mapeados.",
+   "situacao_inicial": "3. Reunião feita: falta o passo seguinte",
+   "proximo_passo": "Enviar recap e proposta.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-24",
+   "historico": [
+    {
+     "data": "2026-06-03",
+     "autor": "Lead",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-24",
+     "autor": "Equipe",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-08-24",
+   "trilha": [
+    {
+     "estagio": "reuniao_feita",
+     "data": "2026-08-24"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-24",
+   "nome": "Vitor Campos",
+   "empresa": "Alfa Contabilidade 24",
+   "cargo": "Sócia-administradora",
+   "projeto": "SINAPSE",
+   "subfrente": "jurídico",
+   "estagio": "agendando",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "vitor@alfa24.com.br"
+   ],
+   "telefone": "(11) 94407-7164",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-08-10",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-10",
+   "historico": [
+    {
+     "data": "2026-08-10",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-10",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-08-10",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-08-10"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 40000,
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-25",
+   "nome": "Leonardo Reis",
+   "empresa": "Aurora Advogados 25",
+   "cargo": "Diretor Financeiro",
+   "projeto": "SINAPSE",
+   "subfrente": "jurídico",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "leonardo@aurora25.com.br"
+   ],
+   "telefone": "(11) 93012-2889",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-15",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-15",
+   "historico": [
+    {
+     "data": "2026-09-15",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-15",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-09-15",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-09-15"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 3000000
+  },
+  {
+   "id": "demo-26",
+   "nome": "Paulo Viana",
+   "empresa": "Vértice Saúde 26",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "paulo@vértice26.com.br"
+   ],
+   "telefone": "(11) 93361-2674",
+   "linkedin": "",
+   "canal": "WhatsApp",
+   "respondeu_em": "2026-08-29",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-08",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-29",
+   "historico": [
+    {
+     "data": "2026-08-29",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-29",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-08-29",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-08-29"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000,
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-27",
+   "nome": "Paulo Viana",
+   "empresa": "Gama Varejo 27",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "proposta",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "paulo@gama27.com.br"
+   ],
+   "telefone": "(11) 94362-9654",
+   "linkedin": "",
+   "canal": "WhatsApp",
+   "respondeu_em": "2026-09-07",
+   "o_que_respondeu": "Proposta de diagnóstico enviada.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Cobrar retorno da proposta.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-09-07",
+     "autor": "Lead",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-08",
+     "autor": "Equipe",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-22",
+     "autor": "Rafael",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-09-24",
+     "autor": "Ricardo",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-01",
+     "autor": "Aline",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Aline",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "proposta",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000,
+   "credito_estimado": 800000
+  },
+  {
+   "id": "demo-28",
+   "nome": "Sérgio Nunes",
+   "empresa": "Alfa Varejo 28",
+   "cargo": "Head Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "proposta",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "sérgio@alfa28.com.br"
+   ],
+   "telefone": "(11) 92491-5278",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-19",
+   "o_que_respondeu": "Proposta de diagnóstico enviada.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Cobrar retorno da proposta.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-09-19",
+     "autor": "Lead",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-19",
+     "autor": "Equipe",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-01",
+     "autor": "Rafael",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-02",
+     "autor": "Aline",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "proposta",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000,
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-29",
+   "nome": "Fábio Lins",
+   "empresa": "Ômega Mineração 29",
+   "cargo": "Gerente de Tax",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "fábio@ômega29.com.br"
+   ],
+   "telefone": "(11) 99873-9236",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-09-22",
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-09-22",
+     "autor": "Lead",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-22",
+     "autor": "Equipe",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000,
+   "credito_estimado": 800000
+  },
+  {
+   "id": "demo-30",
+   "nome": "Vitor Campos",
+   "empresa": "Delta Mineração 30",
+   "cargo": "Sócia-administradora",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "engajado",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "vitor@delta30.com.br"
+   ],
+   "telefone": "(11) 97564-4714",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-08-28",
+   "o_que_respondeu": "Respondeu com interesse e pediu mais detalhes da tese.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Responder e propor 15 minutos.",
+   "proxima_data": "2026-10-08",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-28",
+   "historico": [
+    {
+     "data": "2026-08-28",
+     "autor": "Lead",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-08-28",
+     "autor": "Equipe",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-08-28",
+   "trilha": [
+    {
+     "estagio": "engajado",
+     "data": "2026-08-28"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 40000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-31",
+   "nome": "Paulo Viana",
+   "empresa": "Ômega Turismo 31",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "engajado",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "paulo@ômega31.com.br"
+   ],
+   "telefone": "(11) 91457-5577",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-09-20",
+   "o_que_respondeu": "Respondeu com interesse e pediu mais detalhes da tese.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Responder e propor 15 minutos.",
+   "proxima_data": "2026-10-08",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-20",
+   "historico": [
+    {
+     "data": "2026-09-20",
+     "autor": "Lead",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-20",
+     "autor": "Equipe",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-09-20",
+   "trilha": [
+    {
+     "estagio": "engajado",
+     "data": "2026-09-20"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-32",
+   "nome": "Gabriela Moura",
+   "empresa": "Aurora Agro 32",
+   "cargo": "Diretor Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "engajado",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "gabriela@aurora32.com.br"
+   ],
+   "telefone": "(11) 96726-6974",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-09-06",
+   "o_que_respondeu": "Respondeu com interesse e pediu mais detalhes da tese.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Responder e propor 15 minutos.",
+   "proxima_data": "2026-10-09",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-06",
+   "historico": [
+    {
+     "data": "2026-09-06",
+     "autor": "Lead",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-09-06",
+     "autor": "Equipe",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-09-06",
+   "trilha": [
+    {
+     "estagio": "engajado",
+     "data": "2026-09-06"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 800000
+  },
+  {
+   "id": "demo-33",
+   "nome": "Diego Rocha",
+   "empresa": "Delta Energia 33",
+   "cargo": "Controller",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "engajado",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "diego@delta33.com.br"
+   ],
+   "telefone": "(11) 96533-4348",
+   "linkedin": "",
+   "canal": "Telefone",
+   "respondeu_em": "2026-06-15",
+   "o_que_respondeu": "Respondeu com interesse e pediu mais detalhes da tese.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Responder e propor 15 minutos.",
+   "proxima_data": "2026-10-08",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-06-15",
+   "historico": [
+    {
+     "data": "2026-06-15",
+     "autor": "Lead",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-06-15",
+     "autor": "Equipe",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Respondeu com interesse e pediu mais detalhes da tese.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-06-15",
+   "trilha": [
+    {
+     "estagio": "engajado",
+     "data": "2026-06-15"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-34",
+   "nome": "Vitor Campos",
+   "empresa": "Alfa Energia 34",
+   "cargo": "Sócio",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "perdido",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "vitor@alfa34.com.br"
+   ],
+   "telefone": "(11) 96636-2389",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-07-05",
+   "o_que_respondeu": "Sem timing agora; retomar com gatilho novo.",
+   "situacao_inicial": "4. Rafael pediu contato ou data e o lead não voltou",
+   "proximo_passo": "Retomar com tese nova.",
+   "proxima_data": "2026-10-14",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-07-29",
+   "historico": [
+    {
+     "data": "2026-07-05",
+     "autor": "Lead",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-07-29",
+     "autor": "Equipe",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Rafael",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Dash"
+    }
+   ],
+   "estagio_desde": "2026-07-29",
+   "trilha": [
+    {
+     "estagio": "nutrir",
+     "data": "2026-07-29"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "motivo_perda": "Já tem consultoria contratada"
+  },
+  {
+   "id": "demo-35",
+   "nome": "Marina Duarte",
+   "empresa": "Delta Energia 35",
+   "cargo": "Controller",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "nutrir",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "marina@delta35.com.br"
+   ],
+   "telefone": "(11) 98109-6447",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-09-22",
+   "o_que_respondeu": "Sem timing agora; retomar com gatilho novo.",
+   "situacao_inicial": "Morno: respondeu sem pedido claro",
+   "proximo_passo": "Retomar com tese nova.",
+   "proxima_data": "2026-10-19",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-22",
+   "historico": [
+    {
+     "data": "2026-09-22",
+     "autor": "Lead",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-22",
+   "trilha": [
+    {
+     "estagio": "nutrir",
+     "data": "2026-09-22"
+    }
+   ],
+   "criado_em": "2026-10-04"
+  },
+  {
+   "id": "demo-36",
+   "nome": "Marina Duarte",
+   "empresa": "Vértice Química 36",
+   "cargo": "Sócio",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "nutrir",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "marina@vértice36.com.br"
+   ],
+   "telefone": "(11) 92391-3602",
+   "linkedin": "",
+   "canal": "",
+   "respondeu_em": "2026-09-25",
+   "o_que_respondeu": "Sem timing agora; retomar com gatilho novo.",
+   "situacao_inicial": "Morno: respondeu sem pedido claro",
+   "proximo_passo": "Retomar com tese nova.",
+   "proxima_data": "2026-10-09",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-25",
+   "historico": [
+    {
+     "data": "2026-09-25",
+     "autor": "Lead",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-25",
+   "trilha": [
+    {
+     "estagio": "nutrir",
+     "data": "2026-09-25"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 800000
+  },
+  {
+   "id": "demo-37",
+   "nome": "Elisa Faria",
+   "empresa": "Alfa Logística 37",
+   "cargo": "Gerente de Tax",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "nutrir",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "elisa@alfa37.com.br"
+   ],
+   "telefone": "(11) 98624-3394",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-10-02",
+   "o_que_respondeu": "Sem timing agora; retomar com gatilho novo.",
+   "situacao_inicial": "Morno: respondeu sem pedido claro",
+   "proximo_passo": "Retomar com tese nova.",
+   "proxima_data": "2026-10-09",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-02",
+   "historico": [
+    {
+     "data": "2026-10-02",
+     "autor": "Lead",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-10-02",
+   "trilha": [
+    {
+     "estagio": "nutrir",
+     "data": "2026-10-02"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-38",
+   "nome": "Vitor Campos",
+   "empresa": "Vértice Metalúrgica 38",
+   "cargo": "Head Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "nutrir",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "vitor@vértice38.com.br"
+   ],
+   "telefone": "(11) 93554-9989",
+   "linkedin": "",
+   "canal": "",
+   "respondeu_em": "2026-09-29",
+   "o_que_respondeu": "Sem timing agora; retomar com gatilho novo.",
+   "situacao_inicial": "Morno: respondeu sem pedido claro",
+   "proximo_passo": "Retomar com tese nova.",
+   "proxima_data": "2026-10-13",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-29",
+   "historico": [
+    {
+     "data": "2026-09-29",
+     "autor": "Lead",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-29",
+   "trilha": [
+    {
+     "estagio": "nutrir",
+     "data": "2026-09-29"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-39",
+   "nome": "Elisa Faria",
+   "empresa": "Alfa Construtora 39",
+   "cargo": "Sócia-administradora",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "nutrir",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "elisa@alfa39.com.br"
+   ],
+   "telefone": "(11) 92683-9627",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-08-31",
+   "o_que_respondeu": "Sem timing agora; retomar com gatilho novo.",
+   "situacao_inicial": "Morno: respondeu sem pedido claro",
+   "proximo_passo": "Retomar com tese nova.",
+   "proxima_data": "2026-10-19",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-08-31",
+   "historico": [
+    {
+     "data": "2026-08-31",
+     "autor": "Lead",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-08-31",
+   "trilha": [
+    {
+     "estagio": "nutrir",
+     "data": "2026-08-31"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 800000
+  },
+  {
+   "id": "demo-40",
+   "nome": "Nelson Pires",
+   "empresa": "Delta Mineração 40",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "nutrir",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "nelson@delta40.com.br"
+   ],
+   "telefone": "(11) 95126-4486",
+   "linkedin": "",
+   "canal": "LinkedIn",
+   "respondeu_em": "2026-09-01",
+   "o_que_respondeu": "Sem timing agora; retomar com gatilho novo.",
+   "situacao_inicial": "Morno: respondeu sem pedido claro",
+   "proximo_passo": "Retomar com tese nova.",
+   "proxima_data": "2026-11-02",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-09-01",
+   "historico": [
+    {
+     "data": "2026-09-01",
+     "autor": "Lead",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-09-01",
+   "trilha": [
+    {
+     "estagio": "nutrir",
+     "data": "2026-09-01"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-41",
+   "nome": "Renata Alves",
+   "empresa": "Delta Gestão Patrimonial 41",
+   "cargo": "Head Financeiro",
+   "projeto": "SINAPSE",
+   "subfrente": "jurídico",
+   "estagio": "perdido",
+   "responsavel": "Rafael",
+   "repassar": false,
+   "email": [
+    "renata@delta41.com.br"
+   ],
+   "telefone": "(11) 95249-9918",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": "2026-10-03",
+   "o_que_respondeu": "Sem timing agora; retomar com gatilho novo.",
+   "situacao_inicial": "Morno: respondeu sem pedido claro",
+   "proximo_passo": "Retomar com tese nova.",
+   "proxima_data": "2026-12-02",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-03",
+   "historico": [
+    {
+     "data": "2026-10-03",
+     "autor": "Lead",
+     "texto": "Sem timing agora; retomar com gatilho novo.",
+     "fonte": "Levantamento 05/10"
+    }
+   ],
+   "estagio_desde": "2026-10-03",
+   "trilha": [
+    {
+     "estagio": "nutrir",
+     "data": "2026-10-03"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "credito_estimado": 3000000,
+   "motivo_perda": "Sem fit (regime especial)"
+  },
+  {
+   "id": "demo-42",
+   "nome": "Elisa Faria",
+   "empresa": "Alfa Turismo 42",
+   "cargo": "Head Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "elisa@alfa42.com.br"
+   ],
+   "telefone": "(11) 98506-9466",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": null,
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "Entrou pelo grupo Prometheus",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-43",
+   "nome": "Elisa Faria",
+   "empresa": "Horizonte Logística 43",
+   "cargo": "Gerente de Tax",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "elisa@horizonte43.com.br"
+   ],
+   "telefone": "(11) 99364-1306",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": null,
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "Entrou pelo grupo Prometheus",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 800000
+  },
+  {
+   "id": "demo-44",
+   "nome": "Vitor Campos",
+   "empresa": "Alfa Logística 44",
+   "cargo": "Controller",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "agendando",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "vitor@alfa44.com.br"
+   ],
+   "telefone": "(11) 93319-8757",
+   "linkedin": "",
+   "canal": "Telefone",
+   "respondeu_em": null,
+   "o_que_respondeu": "Aceitou conversar; falta definir data.",
+   "situacao_inicial": "Entrou pelo grupo Prometheus",
+   "proximo_passo": "Propor dois horários.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Aceitou conversar; falta definir data.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-05",
+   "trilha": [
+    {
+     "estagio": "agendando",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000
+  },
+  {
+   "id": "demo-45",
+   "nome": "Sérgio Nunes",
+   "empresa": "Alfa Agro 45",
+   "cargo": "Sócio",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "proposta",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "sérgio@alfa45.com.br"
+   ],
+   "telefone": "(11) 99492-9695",
+   "linkedin": "",
+   "canal": "Telefone",
+   "respondeu_em": null,
+   "o_que_respondeu": "Proposta de diagnóstico enviada.",
+   "situacao_inicial": "Entrou pelo grupo Prometheus",
+   "proximo_passo": "Cobrar retorno da proposta.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-01",
+   "historico": [
+    {
+     "data": "2026-10-01",
+     "autor": "Aline",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-01",
+   "trilha": [
+    {
+     "estagio": "proposta",
+     "data": "2026-10-01"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000,
+   "credito_estimado": 3000000
+  },
+  {
+   "id": "demo-46",
+   "nome": "Diego Rocha",
+   "empresa": "Horizonte Construtora 46",
+   "cargo": "Controller",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "proposta",
+   "responsavel": "Lucas",
+   "repassar": false,
+   "email": [
+    "diego@horizonte46.com.br"
+   ],
+   "telefone": "(11) 94134-5537",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": null,
+   "o_que_respondeu": "Proposta de diagnóstico enviada.",
+   "situacao_inicial": "Entrou pelo grupo Prometheus",
+   "proximo_passo": "Cobrar retorno da proposta.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-01",
+   "historico": [
+    {
+     "data": "2026-10-01",
+     "autor": "Aline",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Lucas",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-01",
+   "trilha": [
+    {
+     "estagio": "proposta",
+     "data": "2026-10-01"
+    }
+   ],
+   "criado_em": "2026-10-04"
+  },
+  {
+   "id": "demo-47",
+   "nome": "Renata Alves",
+   "empresa": "Vértice Varejo 47",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "proposta",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "renata@vértice47.com.br"
+   ],
+   "telefone": "(11) 92038-8262",
+   "linkedin": "",
+   "canal": "",
+   "respondeu_em": null,
+   "o_que_respondeu": "Proposta de diagnóstico enviada.",
+   "situacao_inicial": "Entrou pelo grupo Prometheus",
+   "proximo_passo": "Cobrar retorno da proposta.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-02",
+   "historico": [
+    {
+     "data": "2026-10-02",
+     "autor": "Aline",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Aline",
+     "texto": "Proposta de diagnóstico enviada.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-02",
+   "trilha": [
+    {
+     "estagio": "proposta",
+     "data": "2026-10-02"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-48",
+   "nome": "Renata Alves",
+   "empresa": "Aurora Varejo 48",
+   "cargo": "Controller",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_feita",
+   "responsavel": "Aline",
+   "repassar": false,
+   "email": [
+    "renata@aurora48.com.br"
+   ],
+   "telefone": "(11) 95541-8411",
+   "linkedin": "",
+   "canal": "",
+   "respondeu_em": null,
+   "o_que_respondeu": "Reunião realizada; dor e decisor mapeados.",
+   "situacao_inicial": "Entrou pelo grupo Prometheus",
+   "proximo_passo": "Enviar recap e proposta.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "",
+   "ultimo_toque": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-10-01",
+     "autor": "Aline",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-02",
+     "autor": "Aline",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Prometheus"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Aline",
+     "texto": "Reunião realizada; dor e decisor mapeados.",
+     "fonte": "Prometheus"
+    }
+   ],
+   "estagio_desde": "2026-10-02",
+   "trilha": [
+    {
+     "estagio": "reuniao_feita",
+     "data": "2026-10-02"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000,
+   "credito_estimado": 6000000
+  },
+  {
+   "id": "demo-49",
+   "nome": "Paulo Viana",
+   "empresa": "Horizonte Mineração 49",
+   "cargo": "Sócio",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_marcada",
+   "responsavel": "Ricardo",
+   "repassar": false,
+   "email": [
+    "paulo@horizonte49.com.br"
+   ],
+   "telefone": "(11) 99572-5253",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": null,
+   "o_que_respondeu": "Reunião de diagnóstico marcada.",
+   "situacao_inicial": "Entrou pela agenda do Outlook",
+   "proximo_passo": "Confirmar presença na véspera.",
+   "proxima_data": "2026-10-06",
+   "proxima_hora": "14:00",
+   "ultimo_toque": "2026-10-05",
+   "estagio_desde": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-10-05",
+     "autor": "Agenda",
+     "texto": "Reunião de diagnóstico marcada.",
+     "fonte": "Agenda"
+    }
+   ],
+   "trilha": [
+    {
+     "estagio": "reuniao_marcada",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 250000,
+   "credito_estimado": 800000
+  },
+  {
+   "id": "demo-50",
+   "nome": "Olívia Castro",
+   "empresa": "Gama Química 50",
+   "cargo": "CFO",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_marcada",
+   "responsavel": "Ricardo",
+   "repassar": false,
+   "email": [
+    "olívia@gama50.com.br"
+   ],
+   "telefone": "(11) 97428-8243",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": null,
+   "o_que_respondeu": "Reunião de diagnóstico marcada.",
+   "situacao_inicial": "Entrou pela agenda do Outlook",
+   "proximo_passo": "Confirmar presença na véspera.",
+   "proxima_data": "2026-10-07",
+   "proxima_hora": "16:00",
+   "ultimo_toque": "2026-10-05",
+   "estagio_desde": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-10-05",
+     "autor": "Agenda",
+     "texto": "Reunião de diagnóstico marcada.",
+     "fonte": "Agenda"
+    }
+   ],
+   "trilha": [
+    {
+     "estagio": "reuniao_marcada",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 80000
+  },
+  {
+   "id": "demo-51",
+   "nome": "Henrique Sales",
+   "empresa": "Atlas Alimentos 51",
+   "cargo": "Controller",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_marcada",
+   "responsavel": "Ricardo",
+   "repassar": false,
+   "email": [
+    "henrique@atlas51.com.br"
+   ],
+   "telefone": "(11) 95960-3004",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": null,
+   "o_que_respondeu": "Reunião de diagnóstico marcada.",
+   "situacao_inicial": "Entrou pela agenda do Outlook",
+   "proximo_passo": "Confirmar presença na véspera.",
+   "proxima_data": "2026-10-09",
+   "proxima_hora": "10:00",
+   "ultimo_toque": "2026-10-05",
+   "estagio_desde": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-10-05",
+     "autor": "Agenda",
+     "texto": "Reunião de diagnóstico marcada.",
+     "fonte": "Agenda"
+    }
+   ],
+   "trilha": [
+    {
+     "estagio": "reuniao_marcada",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 40000,
+   "credito_estimado": 1500000
+  },
+  {
+   "id": "demo-52",
+   "nome": "Elisa Faria",
+   "empresa": "Sigma Logística 52",
+   "cargo": "Diretor Financeiro",
+   "projeto": "Rainmaker",
+   "subfrente": "",
+   "estagio": "reuniao_marcada",
+   "responsavel": "Ricardo",
+   "repassar": false,
+   "email": [
+    "elisa@sigma52.com.br"
+   ],
+   "telefone": "(11) 94597-2542",
+   "linkedin": "",
+   "canal": "E-mail",
+   "respondeu_em": null,
+   "o_que_respondeu": "Reunião de diagnóstico marcada.",
+   "situacao_inicial": "Entrou pela agenda do Outlook",
+   "proximo_passo": "Confirmar presença na véspera.",
+   "proxima_data": "2026-10-20",
+   "proxima_hora": "16:00",
+   "ultimo_toque": "2026-10-05",
+   "estagio_desde": "2026-10-05",
+   "historico": [
+    {
+     "data": "2026-10-05",
+     "autor": "Agenda",
+     "texto": "Reunião de diagnóstico marcada.",
+     "fonte": "Agenda"
+    },
+    {
+     "data": "2026-10-05",
+     "autor": "Agenda",
+     "texto": "Reunião de diagnóstico marcada.",
+     "fonte": "Agenda"
+    }
+   ],
+   "trilha": [
+    {
+     "estagio": "reuniao_feita",
+     "data": "2026-10-05"
+    },
+    {
+     "estagio": "reuniao_marcada",
+     "data": "2026-10-05"
+    }
+   ],
+   "criado_em": "2026-10-04",
+   "valor_honorarios": 120000,
+   "credito_estimado": 3000000
+  }
+ ]
+}

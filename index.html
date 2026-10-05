@@ -674,8 +674,17 @@ $("#theme").onclick = () => {
 };
 const th = LS.get("dash.theme"); if(th) document.documentElement.dataset.theme = th;
 
-const saved = LS.get("dash.pw");
-if(saved) unlock(saved, true).then(boot).catch(() => LS.del("dash.pw"));
+// ?demo=1 abre dados fictícios sem senha (para trabalhar o design sem expor leads reais)
+if(new URLSearchParams(location.search).has("demo")){
+  fetch("data/demo.json", {cache:"no-store"}).then(r => r.json()).then(db => {
+    boot(db);
+    $("#banner").textContent = "Modo demonstração: dados fictícios. O dash real pede a senha do time.";
+    $("#banner").classList.remove("hide");
+  });
+} else {
+  const saved = LS.get("dash.pw");
+  if(saved) unlock(saved, true).then(boot).catch(() => LS.del("dash.pw"));
+}
 })();
 </script>
 </body>
