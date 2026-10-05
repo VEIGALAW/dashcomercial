@@ -61,6 +61,7 @@ Quando rodar na nuvem (checkout limpo do repo, sem o PC do Rafael):
 
 - Antes de tudo: `pip install -q cryptography openpyxl` e `export DASH_SENHA=...` (a senha vem no prompt da rotina; nunca gravar em arquivo versionado nem exibir).
 - As ferramentas são as do **conector Microsoft 365 do claude.ai** (nomes diferentes do ms365 local): mensagens do chat Prometheus (buscar/listar mensagens do chat com o id de `prometheus.chat_id`), busca de e-mails do Outlook, busca na agenda do Outlook e envio de mensagem em chat do Teams. Use o que o conector oferecer para cada passo; a lógica dos passos é a mesma.
+- **Privacidade:** a busca de mensagens do conector varre todos os chats. Considere **somente** mensagens cujo `chatId` seja exatamente o `prometheus.chat_id`; ignore e não cite no resumo nada de outros chats.
 - **Pular o passo 6** (Monitor de Leads): o arquivo está só no PC do Rafael. A tarefa local faz essa parte quando o PC estiver ligado.
 - Agenda do dia (passo 12) só na rodada das 7h45 de dia útil, e só se ainda não houver no chat uma mensagem de hoje começando com 🤖 "Agenda comercial de hoje" (o PC pode já ter postado).
 - `git push` direto na `main`. Se o push for recusado por permissão, não criar branch nem PR: só relatar o erro no resumo final.
