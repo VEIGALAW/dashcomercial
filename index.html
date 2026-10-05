@@ -158,6 +158,35 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .hide{display:none!important}
 footer{color:var(--muted);font-size:12px;padding:24px 0}
 
+/* banner */
+.banner{margin:14px 0 0;padding:10px 14px;border-radius:10px;background:var(--warn-bg);color:var(--warn);font-size:13px}
+
+/* métricas */
+.mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:12px}
+.mcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.mcard h3{margin:0 0 4px;font-size:15px}
+.mcard .hint{color:var(--muted);font-size:12px;margin:0 0 12px}
+.bar{display:grid;grid-template-columns:150px 1fr 100px;gap:8px;align-items:center;margin:6px 0;font-size:12.5px}
+.bar .track{background:var(--panel2);border-radius:6px;height:18px;overflow:hidden}
+.bar .fill{height:100%;background:var(--brand);border-radius:6px}
+.bar .fill.sn{background:var(--sn)} .bar .fill.gold{background:var(--gold)}
+.bar .v{font-variant-numeric:tabular-nums;text-align:right;color:var(--muted)}
+.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.big div{background:var(--panel2);border-radius:10px;padding:10px 12px}
+.big b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
+.big span{font-size:12px;color:var(--muted)}
+.mcard table{min-width:0}
+.mcard td,.mcard th{padding:6px 8px;font-size:12.5px}
+
+/* composer */
+.comp label{display:block;font-size:12px;color:var(--muted);margin:8px 0 3px}
+.comp textarea,.comp input,.comp select{width:100%;border:1px solid var(--line);border-radius:8px;padding:7px 9px;background:var(--panel)}
+.comp textarea{min-height:56px;resize:vertical}
+.comp .row{display:grid;grid-template-columns:1fr 110px;gap:8px}
+.comp .acts{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.comp pre{white-space:pre-wrap;background:var(--panel);border:1px dashed var(--line);border-radius:8px;padding:8px;font-size:12px;margin:10px 0 0}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#fff;font-weight:600}
+
 @media (max-width:700px){
   header{position:static}
   input[type=search]{width:100%}
@@ -200,6 +229,7 @@ footer{color:var(--muted);font-size:12px;padding:24px 0}
       <button data-t="semana" class="on">Semana</button>
       <button data-t="pipeline">Pipeline</button>
       <button data-t="leads">Todos os leads</button>
+      <button data-t="metricas">Métricas</button>
       <button data-t="mov">Movimentos</button>
       <button data-t="playbook">Playbook</button>
     </nav>
@@ -207,6 +237,7 @@ footer{color:var(--muted);font-size:12px;padding:24px 0}
 </header>
 
 <main class="wrap">
+  <div class="banner hide" id="banner"></div>
   <section class="kpis" id="kpis"></section>
 
   <section id="v-semana">
@@ -222,6 +253,8 @@ footer{color:var(--muted);font-size:12px;padding:24px 0}
   <section id="v-pipeline" class="hide"><div class="kanban" id="kanban"></div></section>
 
   <section id="v-leads" class="hide"><div class="tablewrap"><table id="tbl"></table></div></section>
+
+  <section id="v-metricas" class="hide"><div id="metricas"></div></section>
 
   <section id="v-mov" class="hide"><div class="feed" id="feed"></div></section>
 
@@ -249,6 +282,10 @@ const STAGES = [
   {k:"perdido",        rm:"Perdido",             sn:"Perdido",               sla:999,exit:"Desqualificado ou disse não"},
 ];
 const STG = Object.fromEntries(STAGES.map((s,i)=>[s.k,{...s,i}]));
+// Probabilidade de fechamento por estágio (para o pipeline ponderado)
+const PROB = {engajado:.05, material:.10, agendando:.15, reuniao_marcada:.25, reuniao_feita:.35, proposta:.50, negociacao:.75, ganho:1, nutrir:.02, perdido:0};
+const FUNIL = ["engajado","material","agendando","reuniao_marcada","reuniao_feita","proposta","negociacao","ganho"];
+const BRL = v => v == null ? "—" : v.toLocaleString("pt-BR", {style:"currency", currency:"BRL", maximumFractionDigits:0});
 const OPEN = new Set(["engajado","material","agendando","reuniao_marcada","reuniao_feita","proposta","negociacao","nutrir"]);
 const OWNER_COLORS = {Rafael:"#0f2a47",Lucas:"#1b7f3b",Aline:"#b8892d",Ricardo:"#8a3ffc","Sem dono":"#c62828"};
 const DOW = ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
@@ -448,7 +485,8 @@ function renderPlaybook(){
   </ul></div>
   <div class="pbc"><h3>Ritual do time</h3><ul>
     <li><b>Segunda, 15 min:</b> abrir este dash na aba Semana e zerar a coluna Atrasados (fazer, remarcar com data ou mover para Nutrir/Perdido).</li>
-    <li><b>Diário:</b> todo movimento vai para o grupo Prometheus no formato abaixo. O robô lê o grupo uma vez por dia e atualiza o dash.</li>
+    <li><b>7h45, dias úteis:</b> o robô posta no Prometheus a agenda do dia de cada um (vencendo hoje + atrasados + reuniões de amanhã para confirmar).</li>
+    <li><b>Durante o dia:</b> todo movimento vai para o grupo no formato abaixo. O robô lê o grupo, o Outlook e a agenda às 7h45 e às 19h e atualiza o dash.</li>
     <li><b>Sem dono ou repassar:</b> o Rafael distribui na segunda.</li>
   </ul></div>
   <div class="pbc"><h3>Como postar no Prometheus para o robô entender</h3>
@@ -456,11 +494,87 @@ function renderPlaybook(){
     <pre style="white-space:pre-wrap;background:var(--panel2);padding:10px;border-radius:8px;font-size:12px;margin:0">EMPRESA | contato | o que aconteceu | próximo passo | data
 Armstrong | Eduardo | reunião feita, gostou | mandar proposta | 08/10
 Ideal Contábil | Luzia | ligou, sem resposta | 2º toque WhatsApp | 07/10
-#perdido Frooty | sem fit
+Domma | Vivian | reunião marcada | diagnóstico | 09/10 15:00 #reuniao_marcada
+#perdido Frooty | sem fit (o motivo aparece nas Métricas)
 #ganho Halexistar | contrato assinado
-#novo SINAPSE jurídico | Fulano Adv | fulano@x.com | aceitou reunião</pre></div>
+#novo SINAPSE jurídico | Fulano Adv | fulano@x.com | aceitou reunião
+Armstrong | valor R$ 120 mil de honorários / crédito R$ 3 mi
+Ideal Contábil | dono: Aline</pre>
+    <p style="margin:8px 0 0;color:var(--muted);font-size:12px">Mais fácil: abra o lead no dash, preencha "Registrar movimento", clique em <b>Copiar mensagem</b> e cole no grupo.</p></div>
   </div>
   <p class="src">Referências: HBR, "The Short Life of Online Sales Leads" (2011), sobre o tempo de resposta; boas práticas de cadência B2B (Spotio, Instantly, Autobound); MEDDICC (PTC/Jack Napoli) adaptado.</p>`;
+}
+
+/* ---------- métricas ---------- */
+function bars(rows, max, cls){
+  return rows.map(([label, n, extra]) => `<div class="bar"><span>${esc(label)}</span><div class="track"><div class="fill ${cls||""}" style="width:${max?Math.max(n/max*100, n?2:0):0}%"></div></div><span class="v">${extra ?? n}</span></div>`).join("");
+}
+function reached(l){
+  // estágio mais avançado do funil que o lead já atingiu (pela trilha + estágio atual)
+  const seen = [...(l.trilha||[]).map(t => t.estagio), l.estagio].map(k => FUNIL.indexOf(k)).filter(i => i >= 0);
+  return seen.length ? Math.max(...seen) : 0;
+}
+function renderMetrics(){
+  const list = filtered();
+  const open = list.filter(l => l._open && l.estagio !== "nutrir");
+  const won = list.filter(l => l.estagio === "ganho"), lost = list.filter(l => l.estagio === "perdido");
+  const sum = (a, f) => a.reduce((s, l) => s + (f(l) || 0), 0);
+  const pipe = sum(open, l => l.valor_honorarios), weighted = sum(open, l => (l.valor_honorarios||0) * PROB[l.estagio]);
+  const credit = sum(open, l => l.credito_estimado);
+  const semValor = open.filter(l => l.valor_honorarios == null).length;
+  const winRate = won.length + lost.length ? Math.round(won.length / (won.length + lost.length) * 100) + "%" : "—";
+  const ciclos = won.map(l => { const t = l.trilha||[]; return t.length ? daysBetween(t[0].data, t[t.length-1].data) : null; }).filter(x => x != null);
+  const ciclo = ciclos.length ? Math.round(ciclos.reduce((a,b)=>a+b,0)/ciclos.length) + " dias" : "—";
+
+  const reach = FUNIL.map((k, i) => list.filter(l => reached(l) >= i).length);
+  const funil = FUNIL.map((k, i) => [STG[k].rm, reach[i], `${reach[i]}${i ? ` · ${reach[i-1] ? Math.round(reach[i]/reach[i-1]*100) : 0}%` : ""}`]);
+
+  const owners = [...new Set(list.map(l => l.responsavel))].sort();
+  const ownRows = owners.map(o => { const a = list.filter(l => l.responsavel === o);
+    return `<tr><td>${ownerChip(o)}</td><td class="num">${a.filter(l=>l._open&&l.estagio!=="nutrir").length}</td><td class="num">${a.filter(l=>l._late||(l._open&&l.proxima_data===TODAY)).length}</td><td class="num">${a.filter(l=>l._stale&&l.estagio!=="nutrir").length}</td><td class="num">${a.filter(l=>["proposta","negociacao"].includes(l.estagio)).length}</td><td class="num">${a.filter(l=>l.estagio==="ganho").length}</td><td class="num">${BRL(sum(a.filter(l=>l._open), l=>(l.valor_honorarios||0)*PROB[l.estagio]))}</td></tr>`; }).join("");
+
+  const byStage = STAGES.filter(s => OPEN.has(s.k)).map(s => {
+    const a = list.filter(l => l.estagio === s.k);
+    const avg = a.length ? Math.round(a.reduce((x, l) => x + (l.estagio_desde ? daysBetween(l.estagio_desde, TODAY) : 0), 0) / a.length) : 0;
+    return [s.rm, avg, `${avg}d · ${a.length} leads`];
+  });
+  const proj = ["Rainmaker","SINAPSE"].map(p => [p, list.filter(l => l.projeto === p && l._open && l.estagio !== "nutrir").length]);
+  const motivos = {}; lost.forEach(l => { const m = l.motivo_perda || "Sem motivo registrado"; motivos[m] = (motivos[m]||0) + 1; });
+  const maxReach = Math.max(...reach, 1);
+
+  $("#metricas").innerHTML = `<div class="mgrid">
+    <div class="mcard"><h3>Dinheiro na mesa</h3><p class="hint">Honorários estimados dos leads abertos. O ponderado multiplica pela chance de fechar em cada estágio.</p>
+      <div class="big"><div><b>${BRL(pipe)}</b><span>Pipeline (honorários)</span></div><div><b>${BRL(weighted)}</b><span>Ponderado</span></div><div><b>${BRL(credit)}</b><span>Crédito estimado dos clientes</span></div></div>
+      ${semValor ? `<p class="hint" style="margin:0">${semValor} leads abertos sem valor estimado. Peça no Prometheus: <i>EMPRESA | valor R$ 80 mil de honorários / crédito R$ 2 mi</i>.</p>` : ""}</div>
+    <div class="mcard"><h3>Resultado</h3><p class="hint">Fechados no período todo da base.</p>
+      <div class="big"><div><b>${won.length}</b><span>Contratos / parcerias</span></div><div><b>${lost.length}</b><span>Perdidos</span></div><div><b>${winRate}</b><span>Taxa de ganho</span></div><div><b>${ciclo}</b><span>Ciclo médio até fechar</span></div></div></div>
+    <div class="mcard"><h3>Funil de conversão</h3><p class="hint">Quantos leads já chegaram a cada etapa e o % que passou da etapa anterior.</p>${bars(funil, maxReach)}</div>
+    <div class="mcard"><h3>Tempo médio no estágio atual</h3><p class="hint">Onde o pipeline está empoçando.</p>${bars(byStage, Math.max(...byStage.map(b=>b[1]),1), "gold")}</div>
+    <div class="mcard" style="grid-column:1/-1"><h3>Por responsável</h3><p class="hint">Hoje = vencendo hoje + atrasados. Ponderado = honorários × chance de fechar.</p>
+      <div class="tablewrap" style="border:0"><table style="min-width:640px"><thead><tr><th>Dono</th><th>Ativos</th><th>Hoje</th><th>Parados</th><th>Propostas</th><th>Ganhos</th><th>Ponderado</th></tr></thead><tbody>${ownRows}</tbody></table></div></div>
+    <div class="mcard"><h3>Ativos por frente</h3><p class="hint">Rainmaker (clientes) × SINAPSE (parcerias).</p>${bars(proj.map(([p,n])=>[p,n]), Math.max(...proj.map(p=>p[1]),1))}</div>
+    <div class="mcard"><h3>Motivos de perda</h3><p class="hint">Registre no grupo: <i>#perdido EMPRESA | motivo</i>.</p>${Object.keys(motivos).length ? bars(Object.entries(motivos).sort((a,b)=>b[1]-a[1]), Math.max(...Object.values(motivos))) : '<div class="empty">Nenhum perdido ainda.</div>'}</div>
+  </div>`;
+}
+
+/* ---------- composer: monta a mensagem para o Prometheus ---------- */
+function composer(l){
+  const opts = STAGES.map(s => `<option value="${s.k}" ${s.k===l.estagio?"selected":""}>${esc(l.projeto==="SINAPSE"?s.sn:s.rm)}</option>`).join("");
+  return `<div class="box comp"><h4>Registrar movimento</h4>
+    <label>O que aconteceu</label><textarea id="c-what" placeholder="Ex.: liguei, ele pediu proposta até sexta"></textarea>
+    <label>Próximo passo</label><input id="c-next" value="">
+    <div class="row"><div><label>Data do próximo contato</label><input type="date" id="c-date"></div><div><label>Hora</label><input type="time" id="c-time"></div></div>
+    <label>Estágio</label><select id="c-stage">${opts}</select>
+    <pre id="c-out"></pre>
+    <div class="acts"><button class="btn gold" id="c-copy">Copiar mensagem</button>${DB.prometheus?.chat_id?`<a class="btn" href="https://teams.microsoft.com/l/chat/${encodeURIComponent(DB.prometheus.chat_id)}/conversations" target="_blank" rel="noopener">Abrir Prometheus</a>`:""}</div>
+    <p class="hint" style="color:var(--muted);font-size:12px;margin:8px 0 0">Cole no grupo. O robô atualiza o dash na próxima rodada (7h45 e 19h).</p></div>`;
+}
+function composerMsg(l){
+  const v = id => $(id).value.trim();
+  const d = v("#c-date"), t = v("#c-time"), st = $("#c-stage").value;
+  const quando = d ? `${d.slice(8,10)}/${d.slice(5,7)}${t?" "+t:""}` : "";
+  const tag = st !== l.estagio ? ` #${st}` : "";
+  return `${l.empresa} | ${l.nome} | ${v("#c-what") || "…"} | ${v("#c-next") || "…"}${quando?" | "+quando:""}${tag}`;
 }
 
 /* ---------- drawer ---------- */
@@ -484,22 +598,37 @@ function openLead(id){
       <dt>Canal principal</dt><dd>${esc(l.canal)||"—"}</dd>
       <dt>Respondeu em</dt><dd>${fmt(l.respondeu_em)}</dd>
       <dt>Último toque</dt><dd>${fmt(l.ultimo_toque)}${l._idle!=null?` (${l._idle} dias)`:""}</dd>
+      <dt>Honorários est.</dt><dd>${BRL(l.valor_honorarios)}</dd>
+      <dt>Crédito est.</dt><dd>${BRL(l.credito_estimado)}</dd>
+      <dt>No estágio desde</dt><dd>${fmt(l.estagio_desde)}</dd>
+      ${l.motivo_perda?`<dt>Motivo da perda</dt><dd>${esc(l.motivo_perda)}</dd>`:""}
     </dl>
+    ${composer(l)}
     ${l.o_que_respondeu?`<div class="box"><h4>O que o lead disse</h4>${esc(l.o_que_respondeu)}</div>`:""}
     <div class="box"><h4>Histórico</h4><div class="tl">${(l.historico||[]).slice().sort((a,b)=>(b.data||"").localeCompare(a.data||"")).map(h =>
       `<div class="it"><div class="m">${fmt(h.data)} · ${esc(h.autor)}${h.fonte?" · "+esc(h.fonte):""}</div>${esc(h.texto)}</div>`).join("") || "—"}</div></div>
   </div>`;
   $("#drawer").classList.add("open"); $("#scrim").classList.add("open");
   $("#dwclose").onclick = closeLead;
+  const upd = () => { $("#c-out").textContent = composerMsg(l); };
+  ["#c-what","#c-next","#c-date","#c-time","#c-stage"].forEach(id => $(id).addEventListener("input", upd));
+  upd();
+  $("#c-copy").onclick = async () => {
+    const txt = composerMsg(l);
+    try { await navigator.clipboard.writeText(txt); $("#c-copy").textContent = "Copiado ✓"; }
+    catch(e){ const r = document.createRange(); r.selectNodeContents($("#c-out")); getSelection().removeAllRanges(); getSelection().addRange(r); $("#c-copy").textContent = "Selecionado: Ctrl+C"; }
+    setTimeout(() => { $("#c-copy").textContent = "Copiar mensagem"; }, 2000);
+  };
 }
 function closeLead(){ $("#drawer").classList.remove("open"); $("#scrim").classList.remove("open"); }
 
 /* ---------- orquestração ---------- */
 function render(){
   renderKpis();
-  ["semana","pipeline","leads","mov","playbook"].forEach(v => $("#v-"+v).classList.toggle("hide", v !== view));
+  if(!["semana","pipeline","leads","metricas","mov","playbook"].includes(view)) view = "semana";
+  ["semana","pipeline","leads","metricas","mov","playbook"].forEach(v => $("#v-"+v).classList.toggle("hide", v !== view));
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === view));
-  ({semana:renderWeek, pipeline:renderKanban, leads:renderTable, mov:renderFeed, playbook:renderPlaybook})[view]();
+  ({semana:renderWeek, pipeline:renderKanban, leads:renderTable, metricas:renderMetrics, mov:renderFeed, playbook:renderPlaybook})[view]();
 }
 function boot(db){
   DB = db; DB.leads.forEach(enrich);
@@ -507,6 +636,14 @@ function boot(db){
   const owners = [...new Set([...(DB.equipe||[]), ...DB.leads.map(l => l.responsavel)])];
   $("#fowner").innerHTML = `<option value="">Todos os donos</option>` + owners.map(o => `<option>${esc(o)}</option>`).join("");
   const dt = new Date(DB.publicado_em || DB.atualizado_em);
+  // Robô roda 7h45 e 19h todo dia; mais de 14h sem publicar = alguma rodada falhou
+  const horas = Math.round((Date.now() - dt) / 36e5);
+  const now = new Date(), wd = now.getDay();
+  const limite = (wd === 0 || wd === 6 || (wd === 1 && now.getHours() < 9)) ? 62 : 14; // fim de semana o PC pode estar desligado
+  if(horas > limite){
+    $("#banner").textContent = `⚠️ O robô não atualiza o dash há ${horas} horas. Os dados podem estar desatualizados. Avise o Rafael (o PC dele precisa estar com o Claude aberto) ou rode o robô em outro PC.`;
+    $("#banner").classList.remove("hide");
+  }
   $("#upd").textContent = `Atualizado ${dt.toLocaleDateString("pt-BR")} ${dt.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})} · ${DB.leads.length} leads`;
   $("#foot").textContent = `Fonte: levantamento de 05/10/2026 + grupo Prometheus no Teams (sincronizado 1x por dia). Último sync do grupo: ${DB.prometheus?.ultima_msg ? new Date(DB.prometheus.ultima_msg).toLocaleString("pt-BR") : "—"}.`;
   render();
