@@ -17,7 +17,8 @@ STOP = {"ltda", "sa", "s", "a", "grupo", "de", "do", "da", "e", "the", "advogado
 
 
 def senha() -> str:
-    return KEY.read_text(encoding="utf-8").strip()
+    # na nuvem a senha vem da variável DASH_SENHA; no PC, de private/.senha
+    return os.environ.get("DASH_SENHA") or KEY.read_text(encoding="utf-8").strip()
 
 
 def _kdf(salt: bytes, pw: str) -> bytes:

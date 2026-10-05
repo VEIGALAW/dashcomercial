@@ -93,6 +93,7 @@ def trilha(l, hoje: str):
 def pull():
     git("pull", "--rebase", "--autostash", "-q", check=True)
     remoto = decrypt(json.loads(OUT.read_text(encoding="utf-8")), senha())
+    SRC.parent.mkdir(exist_ok=True)
     local = load() if SRC.exists() else {}
     if local.get("publicado_em", "") > remoto.get("publicado_em", ""):
         print(f"local ({local['publicado_em']}) é mais novo que o publicado ({remoto.get('publicado_em')}): mantido o local")
