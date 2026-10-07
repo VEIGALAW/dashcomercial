@@ -89,6 +89,21 @@ def main():
     reunioes = [l for l in abertos if l["estagio"] == "reuniao_marcada" and l.get("proxima_data") == amanha]
 
     p = [f"<p>🤖 <b>Agenda comercial de hoje ({DOW[hoje.weekday()]} {hoje:%d/%m})</b></p>"]
+
+    # Resumo do que aconteceu desde o último dia útil (o feed é escrito pelo robô em cada rodada)
+    ganhos = [l for l in db["leads"] if l["estagio"] == "ganho" and (l.get("estagio_desde") or "") >= desde]
+    feed = [f for f in db.get("feed", []) if (f.get("data") or "") >= desde]
+    revisar = [f for f in feed if f.get("texto", "").startswith("[revisar]")]
+    movs = [f for f in feed if f not in revisar]
+    if ganhos:
+        p.append("<p>🏆 <b>Fechados</b></p><ul>" + "".join(
+            f"<li><b>{escape(l['empresa'])}</b> [{tag(l)}] ({escape(l['responsavel'])})</li>" for l in ganhos) + "</ul>")
+    if movs:
+        p.append(f"<p>📈 <b>O que andou desde {date.fromisoformat(desde):%d/%m}</b></p><ul>" + "".join(
+            f"<li>{escape(f['texto'])}</li>" for f in movs[:12]) + "</ul>")
+    if revisar:
+        p.append("<p>❓ <b>Ficou sem entender (respondam aqui)</b></p><ul>" + "".join(
+            f"<li>{escape(f['texto'].replace('[revisar]', '').strip())}</li>" for f in revisar) + "</ul>")
     if novos:
         p.append(f"<p>🆕 <b>Leads novos</b> ({len(novos)})</p><ul>" + "".join(
             f"<li><b>{escape(l['empresa'])}</b> ({escape(l['nome'])}) [{tag(l)}]: {escape((l.get('o_que_respondeu') or l.get('situacao_inicial') or '')[:140])}</li>"
