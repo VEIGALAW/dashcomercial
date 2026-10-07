@@ -5,36 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Pipeline Comercial Veiga</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
 <style>
+/* Identidade Veiga Partners (brandbook nov/2023): marca monocromática, brancos e cinzas, Helvetica Neue (Arial como fonte de sistema). */
 :root{
-  --bg:#f4f4f1; --panel:#ffffff; --panel2:#f7f7f4; --panel3:#eeeee9; --ink:#16202c; --muted:#5b6673; --line:#e3e4df; --line2:#d2d4ce;
-  --brand:#0f2a47; --brand-fg:#ffffff; --gold:#9a7424; --gold-soft:#d8b35a; --gold-bg:#f6efdc; --gold-ring:#f0e3bd;
-  --rm:#1f4f9e; --rm-bg:#e6eef9; --sn:#6b3fa0; --sn-bg:#efe8f8;
+  --bg:#ebebeb; --panel:#ffffff; --panel2:#f5f5f5; --panel3:#e2e2e2; --ink:#3c3c3c; --muted:#6b6b6b; --line:#e2e2e2; --line2:#cecece;
+  --brand:#3c3c3c; --brand-fg:#ffffff; --accent:#000000; --accent-bg:#e2e2e2; --accent-ring:#cecece; --graf:#e2e2e2;
+  --rm:#ffffff; --rm-bg:#3c3c3c; --sn:#3c3c3c; --sn-bg:#ffffff; --sn-line:#3c3c3c;
   --late:#b3261e; --late-ink:#8f1d16; --late-bg:#fbe9e7; --late-line:#efc9c4; --late-panel:#fbf3f2;
   --warn:#8d5a00; --warn-ink:#7a4e00; --warn-bg:#fbf1dc; --ok:#1b6e3d; --ok-bg:#e4f3ea;
-  --shadow:0 1px 2px rgba(22,32,44,.04); --shadow-lg:0 12px 40px rgba(22,32,44,.18);
-  --serif:"Source Serif 4",Georgia,"Times New Roman",serif; --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --shadow:0 1px 2px rgba(0,0,0,.04); --shadow-lg:0 12px 40px rgba(0,0,0,.18);
+  --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#0d1218; --panel:#141b24; --panel2:#1a2230; --panel3:#212b3a; --ink:#e8ebef; --muted:#9aa5b1; --line:#273140; --line2:#344056;
-    --brand:#1c3b63; --brand-fg:#ffffff; --gold:#d8b35a; --gold-soft:#d8b35a; --gold-bg:#2b2516; --gold-ring:#4a3d1a;
-    --rm:#8fb4f5; --rm-bg:#172a46; --sn:#c4a6f2; --sn-bg:#2a1f3f;
-    --late:#ff8a80; --late-ink:#ffb4ad; --late-bg:#3b1a19; --late-line:#5a2a28; --late-panel:#241416;
+    --bg:#1e1e1e; --panel:#2a2a2a; --panel2:#333333; --panel3:#3c3c3c; --ink:#ebebeb; --muted:#b4b4b4; --line:#3c3c3c; --line2:#4d4d4d;
+    --brand:#ebebeb; --brand-fg:#1e1e1e; --accent:#ffffff; --accent-bg:#3c3c3c; --accent-ring:#4d4d4d; --graf:#2a2a2a;
+    --rm:#1e1e1e; --rm-bg:#ebebeb; --sn:#ebebeb; --sn-bg:#2a2a2a; --sn-line:#9d9d9d;
+    --late:#ff8a80; --late-ink:#ffb4ad; --late-bg:#3b1a19; --late-line:#5a2a28; --late-panel:#2a1c1c;
     --warn:#f2bd5b; --warn-ink:#f2bd5b; --warn-bg:#37290f; --ok:#6fd48f; --ok-bg:#14301d;
     --shadow:0 1px 2px rgba(0,0,0,.35); --shadow-lg:0 12px 40px rgba(0,0,0,.6);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0d1218; --panel:#141b24; --panel2:#1a2230; --panel3:#212b3a; --ink:#e8ebef; --muted:#9aa5b1; --line:#273140; --line2:#344056;
-  --brand:#1c3b63; --brand-fg:#ffffff; --gold:#d8b35a; --gold-soft:#d8b35a; --gold-bg:#2b2516; --gold-ring:#4a3d1a;
-  --rm:#8fb4f5; --rm-bg:#172a46; --sn:#c4a6f2; --sn-bg:#2a1f3f;
-  --late:#ff8a80; --late-ink:#ffb4ad; --late-bg:#3b1a19; --late-line:#5a2a28; --late-panel:#241416;
+  --bg:#1e1e1e; --panel:#2a2a2a; --panel2:#333333; --panel3:#3c3c3c; --ink:#ebebeb; --muted:#b4b4b4; --line:#3c3c3c; --line2:#4d4d4d;
+  --brand:#ebebeb; --brand-fg:#1e1e1e; --accent:#ffffff; --accent-bg:#3c3c3c; --accent-ring:#4d4d4d; --graf:#2a2a2a;
+  --rm:#1e1e1e; --rm-bg:#ebebeb; --sn:#ebebeb; --sn-bg:#2a2a2a; --sn-line:#9d9d9d;
+  --late:#ff8a80; --late-ink:#ffb4ad; --late-bg:#3b1a19; --late-line:#5a2a28; --late-panel:#2a1c1c;
   --warn:#f2bd5b; --warn-ink:#f2bd5b; --warn-bg:#37290f; --ok:#6fd48f; --ok-bg:#14301d;
   --shadow:0 1px 2px rgba(0,0,0,.35); --shadow-lg:0 12px 40px rgba(0,0,0,.6);
   color-scheme:dark;
@@ -42,38 +40,45 @@
 
 *{box-sizing:border-box}
 html,body{margin:0}
-body{background:var(--bg);color:var(--ink);font:14px/1.45 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative}
 button,input,select,textarea{font:inherit;color:inherit}
-a{color:var(--rm)}
-a:hover{color:var(--ink)}
-h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.005em}
-:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+a{color:var(--ink);text-decoration-color:var(--line2);text-underline-offset:2px}
+a:hover{text-decoration-color:var(--ink)}
+h1,h2,h3{font-family:var(--sans);font-weight:700;letter-spacing:-.01em}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .wrap{max-width:1500px;margin:0 auto;padding:0 24px}
 .hide{display:none!important}
 .num{font-variant-numeric:tabular-nums}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* botões e campos */
-.btn{border:1px solid var(--line2);background:var(--panel);border-radius:8px;padding:0 12px;min-height:38px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;color:var(--ink);white-space:nowrap}
-.btn:hover{border-color:var(--gold)}
+.btn{border:1px solid var(--line2);background:var(--panel);border-radius:4px;padding:0 12px;min-height:38px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;color:var(--ink);white-space:nowrap}
+.btn:hover{border-color:var(--accent)}
 .btn.icon{width:38px;padding:0}
 .btn.primary{background:var(--brand);border-color:var(--brand);color:var(--brand-fg);font-weight:600}
 .btn.primary:hover{filter:brightness(1.1)}
 .btn svg{width:16px;height:16px;flex:none}
-select,input[type=search],input[type=text],input[type=date],input[type=time],input[type=password],textarea{border:1px solid var(--line2);border-radius:8px;padding:8px 10px;background:var(--panel);min-height:38px}
-select:hover,input:hover,textarea:hover{border-color:var(--gold)}
-.seg{display:inline-flex;border:1px solid var(--line2);border-radius:8px;overflow:hidden;background:var(--panel)}
+select,input[type=search],input[type=text],input[type=date],input[type=time],input[type=password],textarea{border:1px solid var(--line2);border-radius:4px;padding:8px 10px;background:var(--panel);min-height:38px}
+select:hover,input:hover,textarea:hover{border-color:var(--accent)}
+.seg{display:inline-flex;border:1px solid var(--line2);border-radius:4px;overflow:hidden;background:var(--panel)}
 .seg button{border:0;background:transparent;padding:0 12px;min-height:36px;cursor:pointer;color:var(--muted)}
 .seg button+button{border-left:1px solid var(--line)}
 .seg button.on{background:var(--brand);color:var(--brand-fg);font-weight:600}
 .seg button:focus-visible{outline-offset:-2px}
 
 /* tela de senha */
-#lock{min-height:100vh;display:grid;place-items:center;padding:16px;background:
-  radial-gradient(1200px 600px at 50% -10%, var(--panel3), transparent 70%), var(--bg)}
-.lockbox{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:32px 28px;width:100%;max-width:400px;box-shadow:var(--shadow-lg)}
-.lockbox .logo{margin-bottom:16px}
-.lockbox h1{font-size:26px;margin:0 0 4px}
+#lock{min-height:100vh;display:grid;place-items:center;padding:16px;background:var(--bg);position:relative;overflow:hidden}
+.lockbox{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:32px 28px;width:100%;max-width:400px;box-shadow:var(--shadow-lg);position:relative}
+.lockbox .logo{height:40px;width:auto;margin-bottom:22px;display:block}
+.lockbox h1{font-size:24px;margin:0 0 4px}
+/* grafismo: módulos "+" do brandbook em espaços vazios */
+.graf{position:absolute;color:var(--graf);pointer-events:none;z-index:0}
+.graf svg{display:block;width:100%;height:100%}
+#lock .graf.g1{width:220px;height:220px;right:-60px;top:12%}
+#lock .graf.g2{width:120px;height:120px;left:8%;bottom:10%}
+#lock .graf.g3{width:70px;height:70px;left:18%;top:14%}
+body > .graf.g4{position:fixed;width:360px;height:360px;right:-120px;bottom:-120px;opacity:.5}
+#app{position:relative;z-index:1}
 .lockbox p{color:var(--muted);margin:0 0 20px}
 .lockbox input[type=password]{width:100%;padding:11px 12px;min-height:44px}
 .lockbox label{display:flex;gap:8px;align-items:center;margin:14px 0 18px;color:var(--muted);min-height:40px}
@@ -84,8 +89,9 @@ select:hover,input:hover,textarea:hover{border-color:var(--gold)}
 header{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
 .top{display:flex;align-items:center;gap:12px;padding:14px 0;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:12px;margin-right:auto}
-.logo{width:36px;height:36px;border-radius:8px;background:var(--brand);color:var(--gold-soft);display:grid;place-items:center;font:600 20px/1 var(--serif);flex:none}
-.brand b{font:600 19px/1.1 var(--serif);display:block}
+.logo{height:30px;width:auto;color:var(--ink);flex:none;display:block}
+.brand .sep{width:1px;height:30px;background:var(--line2);flex:none}
+.brand b{font:500 11.5px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;display:block}
 .brand small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
 .filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .search{position:relative}
@@ -95,21 +101,21 @@ nav.tabs{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none}
 nav.tabs::-webkit-scrollbar{display:none}
 nav.tabs button{border:0;background:none;padding:10px 2px 12px;border-bottom:2px solid transparent;cursor:pointer;color:var(--muted);white-space:nowrap;min-height:40px}
 nav.tabs button:hover{color:var(--ink)}
-nav.tabs button.on{color:var(--ink);border-color:var(--gold);font-weight:600}
+nav.tabs button.on{color:var(--ink);border-color:var(--accent);font-weight:600}
 nav.tabs button:focus-visible{outline-offset:-2px}
 
 /* aviso */
-.banner{margin:16px 0 0;padding:10px 14px;border-radius:10px;background:var(--warn-bg);color:var(--warn-ink);font-size:13px;border:1px solid transparent}
+.banner{margin:16px 0 0;padding:10px 14px;border-radius:5px;background:var(--warn-bg);color:var(--warn-ink);font-size:13px;border:1px solid transparent}
 
 /* kpis */
 .kpis{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;margin:18px 0 6px}
-.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:2px;min-height:40px}
-.kpi:hover{border-color:var(--gold)}
-.kpi .n{font:600 30px/1 var(--serif);font-variant-numeric:tabular-nums}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:2px;min-height:40px}
+.kpi:hover{border-color:var(--accent)}
+.kpi .n{font:700 30px/1 var(--sans);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .kpi .l{color:var(--muted);font-size:12px;line-height:1.3}
 .kpi.late .n{color:var(--late)} .kpi.warn .n{color:var(--warn)}
 .kpi.late{border-color:var(--late-line)}
-.kpi.on{box-shadow:0 0 0 2px var(--gold) inset;border-color:var(--gold)}
+.kpi.on{box-shadow:0 0 0 2px var(--accent) inset;border-color:var(--accent)}
 .legend{margin:4px 0 14px;color:var(--muted);font-size:12px}
 .legend summary{cursor:pointer;display:inline-flex;align-items:center;gap:6px;min-height:36px;list-style:none;color:var(--muted)}
 .legend summary::-webkit-details-marker{display:none}
@@ -119,10 +125,10 @@ nav.tabs button:focus-visible{outline-offset:-2px}
 .legend .items span{display:inline-flex;align-items:center;gap:6px}
 
 /* etiquetas */
-.pill{display:inline-flex;align-items:center;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;white-space:nowrap;line-height:1.5}
-.pill.rm{background:var(--rm-bg);color:var(--rm)}
-.pill.sn{background:var(--sn-bg);color:var(--sn)}
-.tag{display:inline-flex;align-items:center;font-size:11.5px;font-weight:500;padding:2px 8px;border-radius:6px;white-space:nowrap;line-height:1.5}
+.pill{display:inline-flex;align-items:center;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:1px 8px;border-radius:3px;white-space:nowrap;line-height:1.5}
+.pill.rm{background:var(--rm-bg);color:var(--rm);border:1px solid var(--rm-bg)}
+.pill.sn{background:var(--sn-bg);color:var(--sn);border:1px solid var(--sn-line)}
+.tag{display:inline-flex;align-items:center;font-size:11.5px;font-weight:500;padding:2px 8px;border-radius:3px;white-space:nowrap;line-height:1.5}
 .tag.stage{background:var(--panel3);color:var(--muted);border:1px solid var(--line)}
 .tag.date{background:transparent;color:var(--muted);padding-left:0;padding-right:0}
 .tag.late{background:var(--late-bg);color:var(--late-ink);font-weight:600}
@@ -130,11 +136,12 @@ nav.tabs button:focus-visible{outline-offset:-2px}
 .tag.ok{background:var(--ok-bg);color:var(--ok)}
 .tag.time{background:var(--brand);color:var(--brand-fg);font-weight:600;font-variant-numeric:tabular-nums}
 .owner{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);white-space:nowrap}
-.dot{width:20px;height:20px;border-radius:50%;display:inline-grid;place-items:center;font-size:10px;font-weight:600;color:#fff;flex:none}
+.dot{width:20px;height:20px;border-radius:50%;display:inline-grid;place-items:center;font-size:10px;font-weight:700;background:var(--brand);color:var(--brand-fg);flex:none}
+.dot.nobody{background:var(--late);color:#fff}
 
 /* cards */
-.card{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 12px;cursor:pointer;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:4px;text-align:left;color:var(--ink)}
-.card:hover{border-color:var(--gold)}
+.card{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:11px 12px;cursor:pointer;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:4px;text-align:left;color:var(--ink)}
+.card:hover{border-color:var(--accent)}
 .card .r1{display:flex;gap:8px;align-items:center}
 .card .r1 .tag{margin-left:auto}
 .card .co{font-weight:600;font-size:14px;line-height:1.3}
@@ -149,23 +156,23 @@ nav.tabs button:focus-visible{outline-offset:-2px}
 .weekbar{display:flex;align-items:center;gap:8px;margin:4px 0 12px;flex-wrap:wrap}
 .weekbar h2{font-size:22px;margin:0 10px 0 0}
 .week{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:12px;align-items:start}
-.day{background:var(--panel2);border:1px solid var(--line);border-radius:12px;min-height:160px;display:flex;flex-direction:column;min-width:0}
-.day.today{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset;background:var(--panel)}
+.day{background:var(--panel2);border:1px solid var(--line);border-radius:6px;min-height:160px;display:flex;flex-direction:column;min-width:0}
+.day.today{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset;background:var(--panel)}
 .day.overdue{background:var(--late-panel);border-color:var(--late-line)}
 .day.overdue .card{border-color:var(--late-line)}
 .dayh{padding:12px 14px 10px;display:flex;align-items:baseline;gap:8px;border-bottom:1px solid var(--line)}
 .day.overdue .dayh{border-color:var(--late-line)}
 .dayh .dow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
-.day.today .dayh .dow{color:var(--gold)}
+.day.today .dayh .dow{color:var(--accent)}
 .day.overdue .dayh .dow{color:var(--late-ink)}
-.dayh .dn{font:600 22px/1 var(--serif)}
+.dayh .dn{font:700 22px/1 var(--sans)}
 .dayh .cnt{margin-left:auto;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
 .day.overdue .dayh .cnt{background:var(--late);color:#fff;border-radius:999px;padding:1px 8px;font-weight:600}
 .daylist{padding:10px;display:flex;flex-direction:column;gap:8px}
 
 /* pipeline */
 .kanban{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:12px;overflow-x:auto;padding-bottom:12px;align-items:start}
-.col{background:var(--panel2);border:1px solid var(--line);border-radius:12px;min-width:0}
+.col{background:var(--panel2);border:1px solid var(--line);border-radius:6px;min-width:0}
 .colh{padding:12px 14px 10px;border-bottom:1px solid var(--line)}
 .colh .t{display:flex;align-items:center;gap:8px}
 .colh b{font-size:13.5px}
@@ -173,7 +180,7 @@ nav.tabs button:focus-visible{outline-offset:-2px}
 .colh small{display:block;color:var(--muted);font-size:11.5px;margin-top:4px;line-height:1.4}
 
 /* tabela */
-.tablewrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.tablewrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:6px}
 table{border-collapse:collapse;width:100%;min-width:980px}
 th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 th{font-size:11.5px;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--panel);white-space:nowrap}
@@ -181,12 +188,12 @@ th:hover{color:var(--ink)}
 th.on{color:var(--ink)}
 tbody tr{cursor:pointer}
 tbody tr:hover td{background:var(--panel2)}
-tbody tr:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+tbody tr:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 tbody tr:last-child td{border-bottom:0}
 td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 
 /* movimentos */
-.feed{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:6px 16px}
+.feed{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:6px 16px}
 .fi{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
 .fi:last-child{border:0}
 .fi .d{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
@@ -196,28 +203,28 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .fi .t .h b{font-weight:600}
 .fi .src{color:var(--muted);font-size:11px}
 .fi[data-id]{cursor:pointer}
-.fi[data-id]:hover .t .h b{color:var(--gold)}
+.fi[data-id]:hover .t .h b{color:var(--accent)}
 
 /* playbook e métricas */
 .pb{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:12px}
-.pbc,.mcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.pbc,.mcard{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px}
 .pbc h3,.mcard h3{margin:0 0 6px;font-size:17px}
 .pbc ol,.pbc ul{margin:0;padding-left:18px}
 .pbc li{margin:6px 0}
 .pbc table{min-width:0}
 .pbc td,.pbc th{padding:7px 6px;font-size:12.5px}
-.pbc pre{white-space:pre-wrap;background:var(--panel2);border:1px solid var(--line);padding:10px 12px;border-radius:8px;font:12px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:0}
+.pbc pre{white-space:pre-wrap;background:var(--panel2);border:1px solid var(--line);padding:10px 12px;border-radius:4px;font:12px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:0}
 .src{color:var(--muted);font-size:12px;margin-top:14px}
 .mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:12px}
 .mcard .hint{color:var(--muted);font-size:12px;margin:0 0 14px}
 .bar{display:grid;grid-template-columns:150px 1fr 110px;gap:10px;align-items:center;margin:7px 0;font-size:12.5px}
 .bar .track{background:var(--panel3);border-radius:4px;height:14px;overflow:hidden}
 .bar .fill{height:100%;background:var(--brand);border-radius:4px;min-width:0}
-.bar .fill.sn{background:var(--sn)} .bar .fill.gold{background:var(--gold)}
+.bar .fill.sn{background:#9d9d9d} .bar .fill.gold{background:#9d9d9d}
 .bar .v{font-variant-numeric:tabular-nums;text-align:right;color:var(--muted)}
 .big{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
-.big div{background:var(--panel2);border-radius:10px;padding:12px 14px}
-.big b{display:block;font:600 24px/1.1 var(--serif);font-variant-numeric:tabular-nums}
+.big div{background:var(--panel2);border-radius:5px;padding:12px 14px}
+.big b{display:block;font:700 24px/1.1 var(--sans);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .big span{font-size:12px;color:var(--muted);display:block;margin-top:4px}
 .mcard table{min-width:0}
 .mcard td,.mcard th{padding:8px;font-size:12.5px}
@@ -233,7 +240,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .dw .tags .btn{margin-left:auto}
 .dw h2{margin:0;font-size:26px;line-height:1.15}
 .dw .sub{color:var(--muted);margin-top:2px}
-.box{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px}
+.box{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:14px}
 .box h4{margin:0 0 8px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
 .box.next{background:var(--panel);border-color:var(--line2)}
 .box.next.late{background:var(--late-panel);border-color:var(--late-line)}
@@ -246,7 +253,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .step{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;min-width:0;padding:0 2px;font-size:10px;color:var(--muted);text-align:center;line-height:1.2;overflow-wrap:anywhere}
 .step i{width:12px;height:12px;border-radius:50%;background:var(--panel);border:2px solid var(--line2);display:block}
 .step.done i{background:var(--brand);border-color:var(--brand)}
-.step.now i{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 4px var(--gold-ring)}
+.step.now i{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-ring)}
 .step.now{color:var(--ink);font-weight:600}
 .stepnote{margin:12px 0 0;font-size:12px;color:var(--muted);line-height:1.5}
 .stepnote b{color:var(--ink);font-weight:500}
@@ -256,7 +263,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .grid2 dd{margin:0;word-break:break-word}
 .tl{border-left:2px solid var(--line);margin-left:6px;padding-left:16px;display:flex;flex-direction:column;gap:10px}
 .tl .it{position:relative;font-size:13px}
-.tl .it:before{content:"";position:absolute;left:-23px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--panel);border:2px solid var(--gold)}
+.tl .it:before{content:"";position:absolute;left:-23px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--panel);border:2px solid var(--accent)}
 .tl .it .m{color:var(--muted);font-size:12px}
 
 /* registrar movimento */
@@ -266,7 +273,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .comp textarea{min-height:64px;resize:vertical}
 .comp .row{display:grid;grid-template-columns:1fr 120px;gap:10px}
 .comp .acts{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-.comp pre{white-space:pre-wrap;background:var(--panel);border:1px dashed var(--line2);border-radius:8px;padding:10px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:12px 0 0;word-break:break-word}
+.comp pre{white-space:pre-wrap;background:var(--panel);border:1px dashed var(--line2);border-radius:4px;padding:10px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:12px 0 0;word-break:break-word}
 .comp .hint{color:var(--muted);font-size:12px;margin:10px 0 0}
 footer{color:var(--muted);font-size:12px;padding:28px 0}
 
@@ -279,7 +286,8 @@ footer{color:var(--muted);font-size:12px;padding:28px 0}
   .wrap{padding:0 16px}
   header{position:static}
   .top{padding:12px 0;gap:10px}
-  .brand b{font-size:17px}
+  .logo{height:26px}
+  .brand{gap:10px}
   .filters{width:100%;gap:8px}
   .seg{flex:1 1 100%;display:flex}
   .seg button{flex:1}
@@ -305,11 +313,22 @@ footer{color:var(--muted);font-size:12px;padding:28px 0}
 </head>
 <body>
 
+<!-- Marca Veiga Partners (vetor extraído do brandbook): logo completo e símbolo -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="vp-logo" viewBox="0 0 390.6 100"><path fill="currentColor" fill-rule="evenodd" d="M247.04 51.24C247.04 54.72 246.29 57.49 244.79 59.54C243.29 61.58 241.25 62.61 238.66 62.61C236.97 62.61 235.47 62.26 234.15 61.58C232.83 60.89 231.80 59.94 231.05 58.73L231.05 70.78L229.94 70.78L229.94 39.88L231.05 39.88L231.05 43.86C231.82 42.45 232.86 41.36 234.17 40.60C235.47 39.85 236.96 39.47 238.62 39.47C241.23 39.47 243.29 40.47 244.79 42.47C246.29 44.47 247.04 47.28 247.04 50.89L247.04 51.24M245.90 50.81C245.90 47.61 245.27 45.10 243.99 43.29C242.72 41.49 240.94 40.58 238.64 40.58C236.77 40.58 235.18 41.07 233.88 42.04C232.57 43.01 231.63 44.40 231.05 46.21L231.05 56.65C231.63 58.19 232.58 59.38 233.89 60.23C235.20 61.07 236.80 61.49 238.68 61.49C240.97 61.49 242.74 60.59 244.00 58.77C245.27 56.96 245.90 54.30 245.90 50.81ZM269.42 62.20C269.14 61.25 269.00 59.89 269.00 58.11C268.12 59.54 266.92 60.65 265.39 61.43C263.87 62.22 262.14 62.61 260.22 62.61C258.16 62.61 256.50 62.05 255.24 60.93C253.98 59.81 253.35 58.35 253.35 56.54C253.35 54.50 254.28 52.86 256.12 51.63C257.97 50.40 260.43 49.77 263.50 49.74L269.00 49.74L269.00 46.48C269.00 44.61 268.42 43.16 267.24 42.13C266.07 41.10 264.38 40.58 262.20 40.58C260.16 40.58 258.47 41.10 257.10 42.15C255.74 43.19 255.06 44.49 255.06 46.03L253.95 45.99C253.95 44.17 254.75 42.63 256.34 41.37C257.94 40.10 259.89 39.47 262.20 39.47C264.60 39.47 266.52 40.07 267.93 41.27C269.35 42.48 270.08 44.17 270.12 46.36L270.12 57.02C270.12 59.47 270.31 61.13 270.70 62.01L270.70 62.20L269.42 62.20M260.22 61.49C262.31 61.49 264.11 61.03 265.61 60.09C267.12 59.16 268.25 57.84 269.00 56.15L269.00 50.85L263.85 50.85C260.66 50.85 258.22 51.49 256.53 52.75C255.15 53.78 254.46 55.07 254.46 56.61C254.46 57.97 255.01 59.12 256.09 60.07C257.18 61.02 258.55 61.49 260.22 61.49ZM289.03 40.71L287.59 40.58C285.69 40.58 284.10 41.20 282.83 42.43C281.55 43.66 280.71 45.38 280.31 47.59L280.31 62.20L279.20 62.20L279.20 39.88L280.31 39.88L280.31 44.52C280.91 42.97 281.82 41.74 283.03 40.83C284.24 39.92 285.76 39.47 287.59 39.47C288.24 39.47 288.76 39.55 289.16 39.70L289.03 40.71ZM298.75 33.86L298.75 39.88L303.82 39.88L303.82 41.00L298.75 41.00L298.75 56.85C298.75 58.43 299.01 59.60 299.52 60.36C300.04 61.12 300.90 61.49 302.11 61.49C302.72 61.49 303.45 61.43 304.32 61.31L304.50 62.36C304.05 62.53 303.27 62.61 302.17 62.61C300.55 62.61 299.39 62.16 298.69 61.26C297.99 60.36 297.63 58.93 297.62 56.99L297.62 41.00L293.49 41.00L293.49 39.88L297.62 39.88L297.62 33.86L298.75 33.86ZM312.63 45.08C313.36 43.35 314.43 41.98 315.85 40.97C317.27 39.97 318.83 39.47 320.55 39.47C322.94 39.47 324.72 40.15 325.88 41.50C327.05 42.85 327.63 44.90 327.65 47.64L327.65 62.20L326.53 62.20L326.53 47.61C326.52 45.22 326.03 43.45 325.07 42.30C324.11 41.16 322.58 40.58 320.49 40.58C318.57 40.58 316.90 41.27 315.49 42.63C314.08 44.00 313.13 45.76 312.63 47.92L312.63 62.20L311.52 62.20L311.52 39.88L312.63 39.88L312.63 45.08ZM344.56 62.61C342.76 62.61 341.11 62.12 339.60 61.15C338.10 60.18 336.92 58.85 336.07 57.16C335.21 55.47 334.79 53.60 334.79 51.53L334.79 50.61C334.79 48.54 335.20 46.65 336.02 44.93C336.85 43.22 337.98 41.87 339.43 40.91C340.87 39.95 342.44 39.47 344.15 39.47C346.64 39.47 348.67 40.36 350.25 42.13C351.84 43.90 352.63 46.23 352.63 49.12L352.63 50.30L335.90 50.30L335.90 51.51C335.90 53.32 336.28 55.00 337.04 56.54C337.81 58.09 338.86 59.30 340.20 60.18C341.54 61.06 342.99 61.49 344.56 61.49C346.06 61.49 347.34 61.25 348.39 60.75C349.44 60.25 350.37 59.48 351.18 58.44L351.97 59.00C350.30 61.40 347.83 62.61 344.56 62.61M344.15 40.58C341.98 40.58 340.13 41.39 338.62 43.01C337.11 44.62 336.22 46.68 335.96 49.18L351.51 49.18L351.51 48.91C351.51 47.40 351.19 46.00 350.55 44.70C349.91 43.40 349.03 42.39 347.91 41.66C346.79 40.94 345.54 40.58 344.15 40.58ZM369.56 40.71L368.12 40.58C366.22 40.58 364.63 41.20 363.35 42.43C362.07 43.66 361.24 45.38 360.84 47.59L360.84 62.20L359.72 62.20L359.72 39.88L360.84 39.88L360.84 44.52C361.44 42.97 362.35 41.74 363.56 40.83C364.77 39.92 366.29 39.47 368.12 39.47C368.76 39.47 369.29 39.55 369.69 39.70L369.56 40.71ZM389.51 56.73C389.51 54.02 387.20 52.18 382.58 51.20C379.80 50.61 377.87 49.85 376.78 48.92C375.70 48.00 375.15 46.72 375.15 45.10C375.15 43.46 375.85 42.12 377.23 41.06C378.61 40.00 380.41 39.47 382.62 39.47C385.03 39.47 386.96 40.04 388.42 41.19C389.87 42.34 390.60 43.89 390.60 45.84L389.47 45.84C389.47 44.34 388.83 43.09 387.57 42.09C386.30 41.08 384.65 40.58 382.62 40.58C380.67 40.58 379.12 41.01 377.98 41.86C376.84 42.71 376.27 43.78 376.27 45.06C376.27 46.06 376.48 46.85 376.91 47.42C377.33 47.99 378.03 48.51 378.99 48.97C379.95 49.43 381.35 49.87 383.20 50.30C385.04 50.72 386.50 51.22 387.57 51.80C388.64 52.38 389.42 53.06 389.90 53.85C390.38 54.64 390.62 55.61 390.62 56.75C390.62 58.51 389.90 59.93 388.46 61.00C387.01 62.07 385.12 62.61 382.78 62.61C380.28 62.61 378.26 62.04 376.73 60.91C375.20 59.77 374.43 58.31 374.43 56.52L375.55 56.52C375.66 58.09 376.35 59.31 377.62 60.18C378.89 61.06 380.61 61.49 382.78 61.49C384.78 61.49 386.40 61.03 387.64 60.10C388.89 59.17 389.51 58.05 389.51 56.73ZM124.59 40.02L127.94 40.02L133.86 58.65L134.01 58.65L140.27 40.02L143.49 40.02L135.49 61.94L132.46 61.94L124.59 40.02ZM151.46 61.11C150.10 60.32 149.06 59.21 148.33 57.77C147.61 56.34 147.24 54.65 147.24 52.71L147.24 49.31C147.24 47.33 147.62 45.62 148.38 44.18C149.14 42.75 150.19 41.63 151.51 40.84C152.84 40.05 154.37 39.66 156.10 39.66C157.83 39.66 159.36 40.05 160.69 40.83C162.01 41.62 163.06 42.73 163.82 44.17C164.58 45.62 164.96 47.33 164.96 49.31L164.96 51.76L150.28 51.76L150.28 52.92C150.28 54.83 150.80 56.42 151.83 57.70C152.86 58.98 154.37 59.62 156.35 59.62C157.31 59.62 158.16 59.47 158.87 59.19C159.59 58.90 160.17 58.54 160.59 58.10C161.02 57.66 161.30 57.20 161.44 56.73L164.64 56.73C164.57 57.29 164.35 57.89 163.97 58.54C163.60 59.19 163.07 59.79 162.38 60.36C161.70 60.93 160.86 61.39 159.86 61.75C158.86 62.12 157.70 62.30 156.37 62.30C154.46 62.30 152.82 61.90 151.46 61.11M161.90 49.42L161.90 49.22L161.90 49.04C161.90 47.69 161.66 46.51 161.19 45.50C160.71 44.50 160.04 43.72 159.16 43.18C158.28 42.63 157.26 42.36 156.10 42.36C154.93 42.36 153.90 42.63 153.03 43.18C152.16 43.72 151.48 44.50 151.00 45.50C150.52 46.51 150.28 47.69 150.28 49.04L150.28 49.22L150.28 49.42L161.90 49.42ZM171.91 31.58C172.36 31.13 172.90 30.91 173.52 30.91C174.22 30.91 174.79 31.13 175.23 31.57C175.67 32.01 175.89 32.56 175.89 33.23C175.89 33.90 175.67 34.46 175.22 34.90C174.77 35.34 174.21 35.56 173.52 35.56C172.90 35.56 172.36 35.34 171.91 34.90C171.46 34.46 171.24 33.90 171.24 33.23C171.24 32.57 171.46 32.02 171.91 31.58M172.06 40.02L175.09 40.02L175.09 61.94L172.06 61.94L172.06 40.02ZM195.66 65.66C196.69 64.62 197.21 63.20 197.21 61.40L197.21 57.88L197.02 57.88C196.82 58.32 196.54 58.76 196.16 59.20C195.78 59.63 195.33 60.02 194.79 60.36C194.25 60.70 193.64 60.98 192.97 61.19C192.29 61.40 191.54 61.50 190.72 61.50C189.10 61.50 187.63 61.13 186.31 60.40C184.99 59.67 183.94 58.63 183.17 57.27C182.39 55.92 182.00 54.30 182.00 52.41L182.00 48.77C182.00 46.87 182.40 45.24 183.19 43.88C183.98 42.52 185.03 41.47 186.34 40.75C187.65 40.02 189.10 39.66 190.69 39.66C191.85 39.66 192.88 39.86 193.76 40.25C194.65 40.64 195.38 41.13 195.97 41.71C196.56 42.30 196.97 42.88 197.21 43.45L197.35 43.45L197.35 40.02L200.22 40.02L200.22 61.29C200.22 62.76 200.00 64.03 199.55 65.10C199.11 66.18 198.47 67.07 197.66 67.78C196.84 68.50 195.86 69.03 194.71 69.37C193.57 69.72 192.30 69.90 190.90 69.90C189.09 69.90 187.58 69.62 186.38 69.07C185.18 68.52 184.26 67.80 183.63 66.90C182.99 66.01 182.62 65.05 182.53 64.03L185.67 64.03C185.75 64.58 186.01 65.09 186.45 65.57C186.89 66.06 187.50 66.45 188.27 66.76C189.03 67.06 189.95 67.22 191.01 67.22C193.07 67.22 194.62 66.70 195.66 65.66M187.99 43.23C187.06 43.82 186.33 44.65 185.82 45.72C185.30 46.79 185.04 48.05 185.04 49.50L185.04 51.70C185.04 53.11 185.31 54.35 185.85 55.42C186.38 56.49 187.12 57.32 188.07 57.92C189.01 58.52 190.09 58.82 191.30 58.82C192.59 58.82 193.66 58.51 194.54 57.89C195.41 57.27 196.07 56.46 196.53 55.48C196.98 54.50 197.21 53.45 197.21 52.35L197.21 48.92C197.21 47.78 196.97 46.72 196.48 45.72C196.00 44.72 195.33 43.91 194.45 43.28C193.58 42.65 192.52 42.34 191.28 42.34C190.02 42.34 188.93 42.64 187.99 43.23ZM208.28 60.46C206.96 59.24 206.29 57.62 206.29 55.60C206.29 53.70 206.94 52.16 208.24 50.99C209.54 49.82 211.44 49.23 213.94 49.23L219.93 49.23L219.93 46.86C219.93 45.31 219.47 44.18 218.57 43.45C217.66 42.72 216.44 42.36 214.90 42.36C213.87 42.36 213.03 42.49 212.38 42.74C211.73 42.99 211.23 43.33 210.87 43.75C210.51 44.18 210.27 44.65 210.13 45.17L207.17 45.17C207.24 44.29 207.48 43.51 207.88 42.82C208.27 42.14 208.81 41.56 209.49 41.08C210.17 40.61 210.97 40.26 211.91 40.03C212.84 39.80 213.89 39.68 215.05 39.68C216.50 39.68 217.83 39.91 219.04 40.38C220.24 40.85 221.21 41.61 221.93 42.65C222.65 43.70 223.01 45.08 223.01 46.80L223.01 61.94L220.07 61.94L220.07 58.90L219.93 58.90C219.58 59.48 219.11 60.02 218.53 60.55C217.95 61.07 217.25 61.49 216.41 61.81C215.57 62.14 214.59 62.30 213.46 62.30C211.33 62.30 209.61 61.69 208.28 60.46M217.10 58.94C217.97 58.48 218.65 57.86 219.16 57.08C219.67 56.30 219.93 55.41 219.93 54.42L219.93 51.78L213.98 51.78C212.36 51.78 211.20 52.14 210.49 52.85C209.79 53.56 209.44 54.46 209.44 55.53C209.44 56.91 209.91 57.94 210.87 58.61C211.83 59.28 212.93 59.62 214.19 59.62C215.26 59.62 216.23 59.39 217.10 58.94ZM57.38 47.90L51.79 47.90L51.79 42.31L47.98 42.31L47.98 47.90L42.40 47.90L42.40 51.71L47.98 51.71L47.98 57.29L51.79 57.29L51.79 51.71L57.38 51.71L57.38 47.90ZM39.74 64.90L34.93 64.90L34.93 60.09L31.66 60.09L31.66 64.90L26.85 64.90L26.85 68.18L31.66 68.18L31.66 72.99L34.93 72.99L34.93 68.18L39.74 68.18L39.74 64.90ZM39.74 31.66L34.93 31.66L34.93 26.85L31.66 26.85L31.66 31.66L26.85 31.66L26.85 34.93L31.66 34.93L31.66 39.74L34.93 39.74L34.93 34.93L39.74 34.93L39.74 31.66ZM73.08 64.90L68.27 64.90L68.27 60.09L64.99 60.09L64.99 64.90L60.18 64.90L60.18 68.18L64.99 68.18L64.99 72.99L68.27 72.99L68.27 68.18L73.08 68.18L73.08 64.90ZM73.08 31.50L68.27 31.50L68.27 26.69L64.99 26.69L64.99 31.50L60.18 31.50L60.18 34.78L64.99 34.78L64.99 39.59L68.27 39.59L68.27 34.78L73.08 34.78L73.08 31.50ZM56.34 24.77L51.53 24.77L51.53 19.96L48.25 19.96L48.25 24.77L43.44 24.77L43.44 28.05L48.25 28.05L48.25 32.85L51.53 32.85L51.53 28.05L56.34 28.05L56.34 24.77ZM56.34 71.72L51.53 71.72L51.53 66.91L48.25 66.91L48.25 71.72L43.44 71.72L43.44 74.99L48.25 74.99L48.25 79.80L51.53 79.80L51.53 74.99L56.34 74.99L56.34 71.72ZM20.81 62.76L16.93 62.76L16.93 58.88L14.28 58.88L14.28 62.76L10.39 62.76L10.39 65.41L14.28 65.41L14.28 69.30L16.93 69.30L16.93 65.41L20.81 65.41L20.81 62.76ZM20.81 34.36L16.93 34.36L16.93 30.48L14.28 30.48L14.28 34.36L10.39 34.36L10.39 37.01L14.28 37.01L14.28 40.90L16.93 40.90L16.93 37.01L20.81 37.01L20.81 34.36ZM40.88 82.93L36.99 82.90L37.01 79.02L34.36 79.00L34.34 82.89L30.46 82.87L30.44 85.51L34.33 85.54L34.30 89.42L36.95 89.44L36.97 85.55L40.86 85.58L40.88 82.93ZM40.87 14.21L36.98 14.21L36.98 10.33L34.33 10.33L34.33 14.21L30.45 14.21L30.45 16.86L34.33 16.86L34.33 20.75L36.98 20.75L36.98 16.86L40.87 16.86L40.87 14.21ZM69.30 14.27L65.42 14.27L65.42 10.38L62.77 10.38L62.77 14.27L58.88 14.27L58.88 16.92L62.77 16.92L62.77 20.80L65.42 20.80L65.42 16.92L69.30 16.92L69.30 14.27ZM69.30 82.90L65.42 82.90L65.42 79.01L62.77 79.01L62.77 82.90L58.88 82.90L58.88 85.54L62.77 85.54L62.77 89.43L65.42 89.43L65.42 85.54L69.30 85.54L69.30 82.90ZM89.43 62.76L85.54 62.76L85.54 58.88L82.90 58.88L82.90 62.76L79.01 62.76L79.01 65.41L82.90 65.41L82.90 69.30L85.54 69.30L85.54 65.41L89.43 65.41L89.43 62.76ZM89.43 34.34L85.54 34.34L85.54 30.46L82.90 30.46L82.90 34.34L79.01 34.34L79.01 36.99L82.90 36.99L82.90 40.88L85.54 40.88L85.54 36.99L89.43 36.99L89.43 34.34ZM21.84 81.13L18.68 81.13L18.68 77.97L16.53 77.97L16.53 81.13L13.37 81.13L13.37 83.28L16.53 83.28L16.53 86.44L18.68 86.44L18.68 83.28L21.84 83.28L21.84 81.13ZM21.84 16.53L18.68 16.53L18.68 13.37L16.53 13.37L16.53 16.53L13.37 16.53L13.37 18.68L16.53 18.68L16.53 21.84L18.68 21.84L18.68 18.68L21.84 18.68L21.84 16.53ZM86.38 16.56L83.22 16.56L83.22 13.40L81.07 13.40L81.07 16.56L77.91 16.56L77.91 18.71L81.07 18.71L81.07 21.87L83.22 21.87L83.22 18.71L86.38 18.71L86.38 16.56ZM54.12 94.69L50.96 94.69L50.96 91.53L48.81 91.53L48.81 94.69L45.65 94.69L45.65 96.84L48.81 96.84L48.81 100.00L50.96 100.00L50.96 96.84L54.12 96.84L54.12 94.69ZM54.12 3.16L50.96 3.16L50.96 0.00L48.81 0.00L48.81 3.16L45.65 3.16L45.65 5.31L48.81 5.31L48.81 8.47L50.96 8.47L50.96 5.31L54.12 5.31L54.12 3.16ZM75.01 56.25L75.01 51.44L79.82 51.44L79.82 48.16L75.01 48.16L75.01 43.35L71.73 43.35L71.73 48.16L66.92 48.16L66.92 51.44L71.73 51.44L71.73 56.25L75.01 56.25ZM28.05 56.25L28.05 51.44L32.85 51.44L32.85 48.16L28.05 48.16L28.05 43.35L24.77 43.35L24.77 48.16L19.96 48.16L19.96 51.44L24.77 51.44L24.77 56.25L28.05 56.25ZM5.31 54.04L5.31 50.88L8.47 50.88L8.47 48.73L5.31 48.73L5.31 45.57L3.16 45.57L3.16 48.73L0.00 48.73L0.00 50.88L3.16 50.88L3.16 54.04L5.31 54.04ZM95.51 54.04L95.51 50.88L98.67 50.88L98.67 48.73L95.51 48.73L95.51 45.57L93.36 45.57L93.36 48.73L90.20 48.73L90.20 50.88L93.36 50.88L93.36 54.04L95.51 54.04ZM86.38 81.13L83.22 81.13L83.22 77.97L81.07 77.97L81.07 81.13L77.91 81.13L77.91 83.28L81.07 83.28L81.07 86.44L83.22 86.44L83.22 83.28L86.38 83.28L86.38 81.13Z"/></symbol>
+    <symbol id="vp-plus" viewBox="0 0 100 100"><path fill="currentColor" d="M37 0h26v37h37v26H63v37H37V63H0V37h37z"/></symbol>
+  </defs>
+</svg>
+
 <div id="lock">
+  <div class="graf g1" aria-hidden="true"><svg><use href="#vp-plus"/></svg></div>
+  <div class="graf g2" aria-hidden="true"><svg><use href="#vp-plus"/></svg></div>
+  <div class="graf g3" aria-hidden="true"><svg><use href="#vp-plus"/></svg></div>
   <form class="lockbox" id="lockform">
-    <div class="logo" aria-hidden="true">V</div>
+    <svg class="logo" viewBox="0 0 390.6 100" role="img" aria-label="Veiga Partners"><use href="#vp-logo"/></svg>
     <h1>Pipeline Comercial</h1>
-    <p>Rainmaker + SINAPSE · Veiga Partners. Digite a senha do time.</p>
+    <p>Rainmaker + SINAPSE. Digite a senha do time.</p>
     <label for="pw" class="sr">Senha</label>
     <input type="password" id="pw" placeholder="Senha" autocomplete="current-password" autofocus>
     <label><input type="checkbox" id="remember" checked> Lembrar neste computador</label>
@@ -322,7 +341,7 @@ footer{color:var(--muted);font-size:12px;padding:28px 0}
 <header>
   <div class="wrap">
     <div class="top">
-      <div class="brand"><div class="logo" aria-hidden="true">V</div><div><b>Pipeline Comercial</b><small id="upd"></small></div></div>
+      <div class="brand"><svg class="logo" viewBox="0 0 390.6 100" role="img" aria-label="Veiga Partners"><use href="#vp-logo"/></svg><span class="sep" aria-hidden="true"></span><div><b>Pipeline Comercial</b><small id="upd"></small></div></div>
       <div class="filters">
         <div class="seg" id="fproj" role="group" aria-label="Frente">
           <button data-v="" class="on">Todos</button><button data-v="Rainmaker">Rainmaker</button><button data-v="SINAPSE">SINAPSE</button>
@@ -387,6 +406,7 @@ footer{color:var(--muted);font-size:12px;padding:28px 0}
 </main>
 </div>
 
+<div class="graf g4" aria-hidden="true"><svg><use href="#vp-plus"/></svg></div>
 <div id="scrim"></div>
 <aside id="drawer" role="dialog" aria-modal="true" aria-label="Detalhe do lead"></aside>
 
@@ -415,7 +435,6 @@ const SHORT = {
 };
 const BRL = v => v == null ? "—" : v.toLocaleString("pt-BR", {style:"currency", currency:"BRL", maximumFractionDigits:0});
 const OPEN = new Set(["engajado","material","agendando","reuniao_marcada","reuniao_feita","proposta","negociacao","nutrir"]);
-const OWNER_COLORS = {Rafael:"#0f2a47",Lucas:"#1b6e3d",Aline:"#9a7424",Ricardo:"#6b3fa0","Sem dono":"#b3261e"};
 const DOW = ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
 const MES = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 const MESL = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
@@ -493,7 +512,7 @@ const KPI_FILTERS = {
 
 /* ---------- componentes ---------- */
 const projTag = l => `<span class="pill ${l.projeto==="SINAPSE"?"sn":"rm"}">${l.projeto==="SINAPSE"?"SINAPSE":"Rainmaker"}${l.subfrente?" · "+esc(l.subfrente):""}</span>`;
-const ownerChip = (o, rep) => `<span class="owner"><span class="dot" style="background:${OWNER_COLORS[o]||"#5b6673"}" aria-hidden="true">${esc((o||"?")[0])}</span>${esc(o)}${rep?' <span class="tag warn" title="Rafael respondeu e a conversa parou: candidato a passar para Lucas ou Aline">repassar</span>':""}</span>`;
+const ownerChip = (o, rep) => `<span class="owner"><span class="dot ${o==="Sem dono"?"nobody":""}" aria-hidden="true">${esc((o||"?")[0])}</span>${esc(o)}${rep?' <span class="tag warn" title="Rafael respondeu e a conversa parou: candidato a passar para Lucas ou Aline">repassar</span>':""}</span>`;
 const stageTag = l => `<span class="tag stage" title="${esc(STG[l.estagio]?.exit||"")}">${esc(l._stage)}</span>`;
 function health(l){
   if(!l._open) return "";
@@ -807,7 +826,7 @@ function boot(db){
     $("#banner").textContent = `O robô não atualiza o dash há ${horas} horas. Os dados podem estar desatualizados. Avise o Rafael (o PC dele precisa estar com o Claude aberto) ou rode o robô em outro PC.`;
     $("#banner").classList.remove("hide");
   }
-  $("#upd").textContent = `Veiga Partners · atualizado ${dt.toLocaleDateString("pt-BR")} ${dt.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})} · ${DB.leads.length} leads`;
+  $("#upd").textContent = `Atualizado ${dt.toLocaleDateString("pt-BR")} ${dt.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})} · ${DB.leads.length} leads`;
   $("#foot").textContent = `Fonte: levantamento de 05/10/2026 + grupo Prometheus no Teams (sincronizado 1x por dia). Último sync do grupo: ${DB.prometheus?.ultima_msg ? new Date(DB.prometheus.ultima_msg).toLocaleString("pt-BR") : "—"}.`;
   render();
 }

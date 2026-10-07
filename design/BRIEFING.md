@@ -21,7 +21,7 @@ Deixar o painel **sofisticado, elegante, objetivo e didático**, com cara de pro
 3. Didático: quem abre pela primeira vez entende os estágios e as etiquetas sem explicação.
 4. Bonito nos dois temas (claro e escuro) e no celular (largura de 375px, sem rolagem horizontal da página).
 
-Identidade: azul-marinho profundo + dourado discreto (já usados hoje). Tipografia sóbria (hoje: Inter). Pode propor outra fonte do Google Fonts.
+Identidade: a do brandbook Veiga Partners (nov/2023), já aplicada no `index.html`: marca monocromática, branco e tons de cinza (#EBEBEB, #E2E2E2, #CECECE, #9D9D9D, #3C3C3C, preto só no logo e em detalhes), Helvetica Neue com Arial como fonte de sistema, grafismo de módulos "+" em espaços vazios. O logo está embutido em vetor no próprio `index.html` (símbolo `#vp-logo`). Cores só para estado: vermelho (atrasado) e âmbar (parado).
 
 ## Como ver com dados (sem senha)
 
