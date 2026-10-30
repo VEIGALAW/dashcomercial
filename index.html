@@ -716,6 +716,8 @@ async function unlock(pw, remember){
 
 /* ---------- derivados ---------- */
 function enrich(l){
+  // e-mail sempre como lista: um lead gravado com texto puro derrubava a tela inteira
+  if (!Array.isArray(l.email)) l.email = l.email ? String(l.email).split(/[,;\s]+/).filter(Boolean) : [];
   const s = STG[l.estagio] || STG.engajado;
   l._stage = l.projeto === "SINAPSE" ? s.sn : s.rm;
   l._open = OPEN.has(l.estagio);

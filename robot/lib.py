@@ -39,7 +39,13 @@ def decrypt(blob: dict, pw: str) -> dict:
 
 
 def load() -> dict:
-    return json.loads(SRC.read_text(encoding="utf-8"))
+    db = json.loads(SRC.read_text(encoding="utf-8"))
+    # e-mail sempre como lista (lead gravado com texto puro quebrava o painel)
+    for l in db.get("leads", []):
+        e = l.get("email")
+        if not isinstance(e, list):
+            l["email"] = [x for x in re.split(r"[,;\s]+", e or "") if x]
+    return db
 
 
 def save(db: dict):
