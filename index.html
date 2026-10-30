@@ -27,7 +27,7 @@
   --ink:#2b2b2b; --ink2:#141414; --muted:#5b5b5b; --faint:#6b6b6b;
   --line:#e2e1df; --line2:#cfcecb; --line3:#9b9a97;
   --accent:#f57127; --accent-ink:#1a1a1a; --accent-text:#b04e17; --accent-soft:#fde6d8; --focus:#c45514;
-  --brand:#2b2b2b; --brand-fg:#ffffff;
+  --brand:#2b2b2b; --brand-fg:#ffffff; --logo:#000000;
   --rm:#ffffff; --rm-bg:#2b2b2b; --sn:#2b2b2b; --sn-bg:#ffffff; --sn-line:#2b2b2b;
   --late:#b3261e; --late-fg:#ffffff; --late-ink:#8f1d16; --late-bg:#fbe9e7; --late-line:#efc9c4; --late-panel:#fbf3f2;
   --warn:#8d5a00; --warn-ink:#734a00; --warn-bg:#fbf1dc; --warn-line:#efdcb2; --ok:#1b6e3d; --ok-bg:#e4f3ea;
@@ -46,7 +46,7 @@
     --ink:#e6e6e6; --ink2:#fafafa; --muted:#b0b0b0; --faint:#9a9a9a;
     --line:#2e2e2e; --line2:#424242; --line3:#6b6b6b;
     --accent:#f57127; --accent-ink:#1a1a1a; --accent-text:#ff9a5c; --accent-soft:#3a2416; --focus:#ff9a5c;
-    --brand:#ebebeb; --brand-fg:#161616;
+    --brand:#ebebeb; --brand-fg:#161616; --logo:#ffffff;
     --rm:#161616; --rm-bg:#ebebeb; --sn:#ebebeb; --sn-bg:#1f1f1f; --sn-line:#9d9d9d;
     --late:#ff8a80; --late-fg:#161616; --late-ink:#ffb4ad; --late-bg:#3b1a19; --late-line:#5a2a28; --late-panel:#2a1c1c;
     --warn:#f2bd5b; --warn-ink:#f2bd5b; --warn-bg:#37290f; --warn-line:#5a4420; --ok:#6fd48f; --ok-bg:#14301d;
@@ -59,7 +59,7 @@
   --ink:#e6e6e6; --ink2:#fafafa; --muted:#b0b0b0; --faint:#9a9a9a;
   --line:#2e2e2e; --line2:#424242; --line3:#6b6b6b;
   --accent:#f57127; --accent-ink:#1a1a1a; --accent-text:#ff9a5c; --accent-soft:#3a2416; --focus:#ff9a5c;
-  --brand:#ebebeb; --brand-fg:#161616;
+  --brand:#ebebeb; --brand-fg:#161616; --logo:#ffffff;
   --rm:#161616; --rm-bg:#ebebeb; --sn:#ebebeb; --sn-bg:#1f1f1f; --sn-line:#9d9d9d;
   --late:#ff8a80; --late-fg:#161616; --late-ink:#ffb4ad; --late-bg:#3b1a19; --late-line:#5a2a28; --late-panel:#2a1c1c;
   --warn:#f2bd5b; --warn-ink:#f2bd5b; --warn-bg:#37290f; --warn-line:#5a4420; --ok:#6fd48f; --ok-bg:#14301d;
@@ -120,7 +120,8 @@ select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px soli
 #lock{min-height:100vh;position:relative;overflow:hidden;background:var(--bg);display:grid;place-items:center;padding:var(--space-lg)}
 #lock.leaving{position:fixed;inset:0;z-index:50;pointer-events:none;opacity:0;transition:opacity .4s var(--ease)}
 .lockwrap{position:relative;z-index:1;width:100%;max-width:1080px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:var(--space-2xl);align-items:center}
-.lockhero .logo{height:32px;width:auto;margin-bottom:var(--space-2xl);display:block;color:var(--ink2)}
+/* logo: brandbook Veiga Partners pede mínimo de 55px de altura, preto puro no claro e branco puro no escuro */
+.lockhero .logo{height:clamp(60px,6vw,84px);width:auto;margin-bottom:var(--space-2xl);display:block;color:var(--logo)}
 .lockhero h1{font:700 clamp(2.5rem,5.2vw,4.25rem)/1 var(--sans);letter-spacing:-.035em;max-width:12ch}
 .lockhero .pm{margin:var(--space-sm) 0 0;font:500 var(--text-xl)/1.2 var(--sans);color:var(--muted)}
 .lockhero .lead{font-size:var(--text-lg);line-height:1.5;color:var(--muted);max-width:42ch;margin:var(--space-lg) 0 0}
@@ -145,8 +146,8 @@ main{position:relative;z-index:1;padding-bottom:var(--space-lg)}
 header{position:sticky;top:0;z-index:var(--z-sticky);background:var(--panel);border-bottom:1px solid var(--line)}
 .top{display:flex;align-items:center;gap:var(--space-sm);min-height:60px;flex-wrap:wrap;padding:var(--space-xs) 0}
 .brand{display:flex;align-items:center;gap:var(--space-sm);margin-right:auto;min-width:0}
-.logo{height:26px;width:auto;color:var(--ink2);flex:none;display:block}
-.brand .sep{width:1px;height:26px;background:var(--line2);flex:none}
+.logo{height:55px;width:auto;color:var(--logo);flex:none;display:block}
+.brand .sep{width:1px;height:36px;background:var(--line2);flex:none}
 .brand b{font-size:var(--text-md);font-weight:700;color:var(--ink2);display:block;line-height:1.2}
 .brand .pm-b{font-weight:500;color:var(--muted)}
 .brand small{display:block;color:var(--muted);font-size:var(--text-xs);margin-top:var(--space-3xs)}
@@ -449,8 +450,10 @@ footer .pl{width:12px;height:12px;background:var(--line3);-webkit-mask:var(--plu
   :root{--gutter:16px}
   header{position:static}
   .top{gap:var(--space-xs)}
-  .logo{height:24px}
   .brand small{display:none}
+  .brand{flex-wrap:wrap;row-gap:var(--space-2xs)}
+  .brand .sep{display:none}
+  .brand > div{flex-basis:100%}
   .filters{width:100%}
   .filters select{flex:1 1 auto;min-width:0}
   .search{flex:1 1 100%;order:5}
@@ -493,7 +496,7 @@ footer .pl{width:12px;height:12px;background:var(--line3);-webkit-mask:var(--plu
   .steplbl{display:block}
   .pbc,.mcard{padding:var(--space-md)}
   .lockwrap{grid-template-columns:minmax(0,1fr);gap:var(--space-lg)}
-  .lockhero .logo{margin-bottom:var(--space-lg);height:28px}
+  .lockhero .logo{margin-bottom:var(--space-lg);height:56px}
   .lockbox{justify-self:stretch;max-width:none;padding:var(--space-lg) var(--space-md)}
 }
 @media (prefers-reduced-motion: reduce){
